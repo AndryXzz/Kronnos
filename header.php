@@ -49,7 +49,7 @@
             </div>
         </div>
     </header>
-<?php }else{ ?> <style>.content-body{margin:0px; width:auto;}</style> <?php }?>
+<?php }else{ ?> <style>.content-body{margin:0px; width:100%;}</style> <?php }?>
 <div class="top-menu">
             <div class="icons">
                 <a href="cliente.php">
