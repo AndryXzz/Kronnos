@@ -1,0 +1,100 @@
+body {
+  min-width: 460px;
+  flex-flow: inherit;
+}
+.caja0 {
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    width: 90%;
+    text-align: center;
+    background: #ffffff;
+    margin: 1.5% 1.5% 1.5% 1.5%;
+    padding: 20px;
+    float: left;
+    border: #7a7a7a 3px solid;
+    border-radius: 35px 35px 35px 35px;
+    min-width: 440px;
+    position:relative;
+  }
+
+
+.caja1 {
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+  background: #0000ff;
+  margin: 1.5% 1.5% 1.5% 1.5%;
+  padding: 20px;
+  border-radius: 35px 0px 35px 0px;
+  display: inline-block;
+  min-width: 240px;
+  box-shadow: 10px 10px 10px #0000ff80;
+}
+
+.caja2 {
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  color: #000000;
+  font-size: 18px;
+  text-align: center;
+  background: #00ff00;
+  box-shadow: 10px 10px 10px #00ff0080;
+  margin: 1.5% 1.5% 1.5% 1.5%;
+  padding: 20px;
+  border-radius: 35px 0px 35px 0px;
+  display: inline-block;
+  min-width: 240px;
+  
+}
+
+.caja3 {
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+  background: #ff0000;
+  box-shadow: 10px 10px 10px #ff000080;
+  margin: 1.5% 1.5% 1.5% 1.5%;
+  padding: 20px;
+  border-radius: 35px 0px 35px 0px;
+  display: inline-block;
+  min-width: 240px;
+  
+}
+
+.caja4 {
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  color: #000000;
+  font-size: 18px;
+  text-align: center;
+  background: #e0e0e0;
+  margin: 1.5% 1.5% 1.5% 1.5%;
+  padding: 20px;
+  border-radius: 35px 0px 35px 0px;
+  display: inline-block;
+  min-width: 400px;
+  max-width: 400px;
+  box-shadow: 10px 10px 10px #7c7c7c80;
+}
+
+h3, h1 {
+    margin: 0%;
+}
+
+table {
+    margin:auto;
+    width: 100%;
+}
+
+#table {
+  border: #616161 3px solid;
+}
+
+.table td, .table th{
+  border: #616161 1px solid;
+}
+
+td:hover {
+  background-color: rgba(255, 0, 0, 0.473);
+}
