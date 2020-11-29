@@ -19,59 +19,61 @@
 ?>
 <div id="modal"></div>
     <button class="btn" id="create">Crear nuevo Usuario</button>
-    <table border="1" cellpadding="10" style="text-align:center;">
-        <thead>
-            <tr>
-                <th># Identificación</th>
-                <th>Nombre</th>
-                <th>Apellido</th>
-                <th>Dirección</th>
-                <th>Celular</th>
-                <th>Correo</th>
-                <th>Ciudad</th>
-                <th>Rol</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php
-                // var_dump($rows);
-                foreach ($rows as $x => $row) {
-                    echo"
-                    <tr>
-                        <td>
-                            $row[Cedula]
-                        </td>
-                        <td>
-                            $row[Nombre]
-                        </td>
-                        <td>
-                            $row[Apellido]
-                        </td>
-                        <td>
-                            $row[Direccion]
-                        </td>
-                        <td>
-                            $row[Celular]
-                        </td>
-                        <td>
-                            $row[Correo]
-                        </td>
-                        <td>
-                            $row[rol]
-                        </td>
-                        <td>
-                            $row[ciudad]
-                        </td>
-                        <td class='crud'>
-                            <button>editar info</button>
-                            <button>Borrar</button>
-                        </td>
-                    </tr>";
-                }
-            ?>
-        </tbody>
-    </table>
+    <div class="tableCont">
+        <table class="tableStyle" cellpadding="10" cellspacing="0">
+            <thead>
+                <tr>
+                    <th># Identificación</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Dirección</th>
+                    <th>Celular</th>
+                    <th>Correo</th>
+                    <th>Ciudad</th>
+                    <th>Rol</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                    // var_dump($rows);
+                    foreach ($rows as $x => $row) {
+                        echo"
+                        <tr>
+                            <td>
+                                $row[Cedula]
+                            </td>
+                            <td>
+                                $row[Nombre]
+                            </td>
+                            <td>
+                                $row[Apellido]
+                            </td>
+                            <td>
+                                $row[Direccion]
+                            </td>
+                            <td>
+                                $row[Celular]
+                            </td>
+                            <td>
+                                $row[Correo]
+                            </td>
+                            <td>
+                                $row[rol]
+                            </td>
+                            <td>
+                                $row[ciudad]
+                            </td>
+                            <td class='crud'>
+                                <button>editar info</button>
+                                <button>Borrar</button>
+                            </td>
+                        </tr>";
+                    }
+                ?>
+            </tbody>
+        </table>
+    </div>
     <script>
         const modal = document.getElementById("modal");
         const botones = document.getElementsByClassName('crud');
