@@ -181,8 +181,8 @@ textarea {
     padding: 15px;
     margin-left: 12.1em;
     position: absolute;
-    height: calc(100% - 6.5em);
-    width: calc(100% - 14em);
+    height: calc(100% - 4.4em);
+    width: calc(100% - 12.1em);
 }
 
 #usr {
@@ -197,7 +197,7 @@ textarea {
 .top-menu {
     margin-left: 12.1em;
     padding: 8px;
-    height: 3.5em;
+    height: 4.4em;
     border-bottom: 2px solid black;
     display: flex;
     align-items: center;
