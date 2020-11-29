@@ -18,6 +18,25 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!--        Etilos Yamid Cano         -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/jquery-3.5.1.slim.min.js"></script>
+    <script src="./js/Chart.min.js"></script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/raphael-min.js"></script>
+    <script src="./js/livicons-customizer-1.4.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <!--        Etilos Yamid Cano         -->
+
+
 </head>
 
 <body background="img/OIP.jpg">
@@ -60,6 +79,10 @@
                 <a href="perfilUsuario.php">
                     <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                 </a>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                    <a class="dropdown-item" href="#">Dropdown link</a>
+                    <a class="dropdown-item" href="#">Dropdown link</a>
+                </div>
                 
             </div>
         </div>
