@@ -57,7 +57,10 @@
                 </a>
                 <i class="fa fa-search" aria-hidden="true"></i>
                 <i class="fa fa-bell" aria-hidden="true"></i>
-                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                <a href="perfilUsuario.php">
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                </a>
+                
             </div>
         </div>
     <div class="content-body">

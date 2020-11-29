@@ -139,9 +139,20 @@ a {
 /******************** Perfil Usuario ********************/
 
 #fonfoto {
-  background-image: url("https://image.freepik.com/vector-gratis/fondo-pantalla-estilo-material-design_7993-132.jpg");
-  height: 300px;
+  background-image: url("https://besthqwallpapers.com/Uploads/8-4-2019/86758/thumb2-white-wavy-background-4k-abstract-waves-creative-white-backgrounds.jpg");
+  margin: 1% 1% 1% 4%;
+  border-radius: 35px 35px 35px 35px;
+  text-align: center;
+  max-width: 100%;
 }
-#fonfoto:hover {
+/* #fonfoto:hover {
   filter: blur(6px);
+} */
+
+.img-fluid {
+  max-height: 200px;
+}
+
+#btnright {
+  margin-right: 1%;
 }
