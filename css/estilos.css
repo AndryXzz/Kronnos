@@ -166,6 +166,7 @@ textarea {
     color: black;
     text-decoration: unset;
 }
+
 .left-menu .content .options ul li span {
     text-align: center;
     width: 100%;
@@ -180,7 +181,7 @@ textarea {
     padding: 15px;
     margin-left: 12.1em;
     position: absolute;
-    height: 100%;
+    height: calc(100% - 6.5em);
     width: calc(100% - 14em);
 }
 
@@ -210,4 +211,18 @@ textarea {
     width: 100%;
     text-align: right;
     margin-right: 8px;
+}
+.top-menu .icons a:-webkit-any-link {
+    color: white;
+    text-decoration: unset;
+    padding: 6px 24px;
+}
+.tableStyle {
+    background-color: red;
+    text-align: center;
+}
+
+.tableStyle thead {
+    background: #332e44;
+    color: white;
 }
