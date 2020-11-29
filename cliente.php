@@ -1,15 +1,8 @@
 <?php require_once("header.php");?>
 
-<link rel="stylesheet" href="./css/bootstrap.min.css">
+
     <link rel="stylesheet" href="./css/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-    <script src="./js/jquery-3.5.1.slim.min.js"></script>
-    
-    <script>
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
-    </script>
+
 
 <div class="container-fluid" id="container">
     <div class="row">
@@ -111,8 +104,5 @@
 </div>
 
 </body>
-    <script src="./js/popper.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/raphael-min.js"></script>
-    <script src="./js/livicons-customizer-1.4.js"></script>
+
 </html>

@@ -6,17 +6,9 @@
         die();
     }
 ?>
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/jquery-3.5.1.slim.min.js"></script>
-    <script src="./js/Chart.min.js"></script>
-    <script src="./js/utils.js"></script>
-    
-    <script>
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
-    </script>
+
 
 <div class="container-fluid" id="container">
     <div class="row align-items-end">
@@ -119,13 +111,5 @@
     </div>
   </div>
 </body>
-
-
-<script>
-  
-    <script src="./js/popper.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/raphael-min.js"></script>
-    <script src="./js/livicons-customizer-1.4.js"></script>
 
 </html>
