@@ -215,14 +215,57 @@ textarea {
 .top-menu .icons a:-webkit-any-link {
     color: white;
     text-decoration: unset;
-    padding: 6px 24px;
+    margin-right: 10px;
+    transition: all 0.5s ease;
 }
-.tableStyle {
-    background-color: red;
-    text-align: center;
+.top-menu .icons a:hover {
+    color: #95cada;
 }
 
+.tableStyle {
+    text-align: center;
+    border: 2px solid;
+    box-shadow: 10px 8px 9px 2px #332e44f0;
+}
+
+.tableStyle thead tr th {
+    border: 1px solid;
+    border-top: unset;
+}
+.tableStyle thead tr th:last-child {
+    border-right: unset;
+}
+.tableStyle thead tr th:first-child {
+    border-left: unset;
+}
 .tableStyle thead {
     background: #332e44;
     color: white;
+}
+
+.tableStyle tbody tr.abb {
+    background-color: #d6d6d6;
+}
+
+.tableStyle tbody tr.add {
+    background-color: #f1f1f1;
+}
+.tableStyle tbody tr {
+    transition: all.5s ease;
+}
+.tableStyle tbody tr:hover {
+    background-color: #403c4d;
+    color: white;
+}
+.btncont span {
+    text-align: left;
+    float: left;
+    line-height: 35px;
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.btncont {
+    text-align: right;
+    margin-right: 36px !important;
 }

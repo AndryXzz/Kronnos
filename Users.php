@@ -18,8 +18,12 @@
     }
 ?>
 <div id="modal"></div>
-    <button class="btn" id="create">Crear nuevo Usuario</button>
-    <div class="tableCont">
+<div class="tableCont">
+    <div class="btncont">
+        <span>Usuarios</span>
+        <button class="btn" id="create">Crear nuevo Usuario</button>
+    </div>
+    <br><br>
         <table class="tableStyle" cellpadding="10" cellspacing="0">
             <thead>
                 <tr>
@@ -29,8 +33,8 @@
                     <th>Dirección</th>
                     <th>Celular</th>
                     <th>Correo</th>
-                    <th>Ciudad</th>
                     <th>Rol</th>
+                    <th>Ciudad</th>
                     <th></th>
                 </tr>
             </thead>
@@ -38,31 +42,32 @@
                 <?php
                     // var_dump($rows);
                     foreach ($rows as $x => $row) {
+                        $clase = $x%2 ? "add" : "abb" ;
                         echo"
-                        <tr>
+                        <tr class='$clase'>
                             <td>
-                                $row[Cedula]
+                                <span>$row[Cedula]</span>
                             </td>
                             <td>
-                                $row[Nombre]
+                                <span>$row[Nombre]</span>
                             </td>
                             <td>
-                                $row[Apellido]
+                                <span>$row[Apellido]</span>
                             </td>
                             <td>
-                                $row[Direccion]
+                                <span>$row[Direccion]</span>
                             </td>
                             <td>
-                                $row[Celular]
+                                <span>$row[Celular]</span>
                             </td>
                             <td>
-                                $row[Correo]
+                                <span>$row[Correo]</span>
                             </td>
                             <td>
-                                $row[rol]
+                                <span>$row[rol]</span>
                             </td>
                             <td>
-                                $row[ciudad]
+                                <span>$row[ciudad]</span>
                             </td>
                             <td class='crud'>
                                 <button>editar info</button>
