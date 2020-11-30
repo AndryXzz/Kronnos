@@ -21,7 +21,7 @@
 <div class="tableCont">
     <div class="btncont">
         <span>Usuarios</span>
-        <button class="btn" id="create">Crear nuevo Usuario</button>
+        <button class="butn" id="create">Crear nuevo Usuario</button>
     </div>
     <br><br>
         <table class="tableStyle" cellpadding="10" cellspacing="0">
@@ -110,8 +110,8 @@
             }
 
             modal.innerHTML = `
-            <div style="margin:5% 30% 0px 30%; padding: unset;  max-height: 80%;">
-                <button id="closemodal">X</button>
+            <div style="margin:5% 30% 0px 30%; padding: unset;  max-height: 80%; overflow-y: scroll;direction: rtl;">
+                <button id="closeModal">X</button>
                 <form id="formm" action="${action}" method="POST">
                     ${infoID}
                     ${inputId}
@@ -148,7 +148,7 @@
                     </section>
                     ${idAct}
                     ${contra}
-                    <input required class="btn" type="submit" value="${tipoAccion}">
+                    <input required class="butn" type="submit" value="${tipoAccion}">
                 </form>
         </div>`;
 
@@ -156,7 +156,7 @@
 
         }
         var cerrar = function () {
-            document.getElementById("closemodal").addEventListener("click", function () {
+            document.getElementById("closeModal").addEventListener("click", function () {
                 modal.style.animation = "cerrar 0.5s ease";
                 setTimeout(function () { modal.style.display = "none"; modal.style.animation = ""; }, 500);
                 modal.innerHTML = ``;
@@ -175,7 +175,7 @@
             aparecer();
             abrirmodal("Actualizar");
 
-            var valores = this.parentNode.parentNode.getElementsByTagName("td");
+            var valores = this.parentNode.parentNode.getElementsByTagName("span");
             var inputs = modal.getElementsByTagName("input");
             //Poner el ID en el modal
             document.getElementById("inpID").innerHTML = valores[0].innerHTML.trim();

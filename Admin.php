@@ -6,104 +6,151 @@
         die();
     }
 ?>
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/progress.css">
 
-<div class="caja0">
-    <div class="caja">
-        <div class="caja1">
-            <h3>Cuotas Pagadas</h3>
-            <table>
-                <tr>
-                    <th>
-                        <h1>02</h1>
-                    </th>
-                    <th>
-                        <span class="livicon" data-name="piggybank" data-c="White" data-s="60" data-loop="true"
-                            data-hovercolor="White"></span>
-                    </th>
-                </tr>
-            </table>
-        </div>
-        <div class="caja2">
-            <h3>Saldo Pendiente</h3>
-            <table>
-                <tr>
-                    <th>
-                        <h1>$220.000</h1>
-                    </th>
-                    <th>
-                        <span class="livicon" data-name="money" data-c="black" data-s="60" data-loop="true"
-                            data-hovercolor="black"></span>
-                    </th>
-                </tr>
-            </table>
-        </div>
-        <div class="caja3">
-            <h3>Cuotas Por Pagar</h3>
-            <table>
-                <th>
-                    <h1>50</h1>
-                </th>
-                <th>
-                    <span class="livicon" data-name="credit-card" data-c="White" data-s="60" data-loop="true"
-                        data-hovercolor="White"></span>
-                </th>
-            </table>
-        </div>
+<link rel="stylesheet" href="./css/style.css">
+
+<div class="container-fluid" id="container">
+    <div class="row">
+        <h5><span class="livicon" data-name="dashboard" data-c="dark" data-s="30" data-loop="true"
+            data-hovercolor="dark"></span> Dashboard</h5>
     </div>
-    <div class="caja">
-        <div class="caja4">
-            <h3>Crédito Adquirido</h3>
-            <table>
-                <tr>
-                    <th>
-                        <div class="progress">
-                            <p>En uso $50.000</p>
-                            <progress id="php" max="100" value="72"></progress>
-                            <span></span>
-                        </div>
-                    </th>
-                    <th>
-                        Disponible $200.000
-                    </th>
-                </tr>
-            </table>
-            <h3>Total credito 250.000 </h3>
+    <div id="row">
+        <div class="row justify-content-center">
+            <div id="caja1" class="col-3">
+                <h3>Clientes</h3>
+                <h1 data-toggle="tooltip" data-placement="top" title="Numero de clientes">
+                    351
+                    <span class="livicon" data-name="users" data-c="White" data-s="60" data-loop="true"
+                                data-hovercolor="White"></span>
+                </h1>
+            </div>
+            <div id="caja2" class="col-3">
+                <h3>Ventas Diarias</h3>
+                <h2 data-toggle="tooltip" data-placement="top" title="Ventas diarias">
+                    $3.689.500 
+                    <span class="livicon" data-name="money" data-c="white" data-s="60" data-loop="true"
+                        data-hovercolor="white"></span>
+                </h2>
+            </div>
+            <div id="caja3" class="col-3">
+                <h3>Cantidad Ventas</h3>
+                <h1 data-toggle="tooltip" data-placement="top" title="Numero de ventas diarias">
+                    50
+                    <span class="livicon" data-name="truck" data-c="White" data-s="60" data-loop="true"
+                    data-hovercolor="White"></span>
+                </h1>
+
+            </div>
         </div>
-        <div class="caja4">
-            <h3>Historial de Pagos</h3>
-            <table id="table" class="table">
-                <tr>
-                    <th>
-                        Valor Pagado
-                    </th>
-                    <th>
-                        Fecha
-                    </th>
-                </tr>
-                <tr>
-                    <td>$120.000</td>
-                    <td>15/03/2020</td>
-                </tr>
-                <tr>
-                    <td>$120.000</td>
-                    <td>15/03/2020</td>
-                </tr>
-                <tr>
-                    <td>$120.000</td>
-                    <td>15/03/2020</td>
-                </tr>
-            </table>
-            <h3>Total Pagado 250.000 </h3>
+        <div class="row justify-content-center">
+
+            <div id="caja5" class="col-5">
+                <div class="barline">
+                </div>
+            </div>
+
+            <div id="scroll" class="col-5">
+                <div id="caja4">
+                    <table id="table" class="table">
+                        <h3>Informe Diario</h3>
+                        <tr>
+                            <th data-toggle="tooltip" data-placement="top" title="Nombre Vendedor">Vendedor</th>
+                            <th data-toggle="tooltip" data-placement="top" title="Venta realizadas al dia">Venta</th>
+                            <th data-toggle="tooltip" data-placement="top" title="Comicion por venta realizada">Comicion</th>
+                        </tr>
+                        <tr>
+                            <td>Pepito Perez</td>
+                            <td>$120.000</td>
+                            <td>12.000</td>
+                        </tr>
+                        <tr>
+                            <td>Pepito Perez</td>
+                            <td>$120.000</td>
+                            <td>12.000</td>
+                        </tr>
+                        <tr>
+                            <td>Pepito Perez</td>
+                            <td>$120.000</td>
+                            <td>12.000</td>
+                        </tr>
+                        <tr>
+                            <td>Pepito Perez</td>
+                            <td>$120.000</td>
+                            <td>12.000</td>
+                        </tr>
+                        <tr>
+                            <td>Pepito Perez</td>
+                            <td>$120.000</td>
+                            <td>12.000</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
+        <br>
+        <br>
     </div>
+    <br>
 </div>
 
 </body>
-<script src="./js/jquery-1.11.1.min.js"></script>
-<script src="./js/raphael-min.js"></script>
-<script src="./js/livicons-customizer-1.4.js"></script>
-<script src="./js/progress.js"></script>
+
+
+<script>
+        function createConfig(position) {
+            return {
+                type: 'line',
+                data: {
+                    labels: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
+                    datasets: [{
+                        label: 'Año pasado',
+                        borderColor: window.chartColors.red,
+                        backgroundColor: window.chartColors.red,
+                        data: [50, 30, 46, 20, 80, 50, 75, 64, 45, 35, 78],
+                        fill: false,
+                    }, {
+                        label: 'Año Curso',
+                        borderColor: window.chartColors.blue,
+                        backgroundColor: window.chartColors.blue,
+                        data: [7, 49, 46, 13, 25, 30, 22],
+                        fill: false,
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    title: {
+                        display: true,
+                        text: 'Ventas anuales - ' + position
+                    },
+                    tooltips: {
+                        position: position,
+                        mode: 'index',
+                        intersect: false,
+                    },
+                }
+            };
+        }
+
+        window.onload = function () {
+            var container = document.querySelector('.barline');
+
+            ['average'].forEach(function (position) {
+                var div = document.createElement('div');
+                div.classList.add('chart-container');
+
+                var canvas = document.createElement('canvas');
+                div.appendChild(canvas);
+                container.appendChild(div);
+
+                var ctx = canvas.getContext('2d');
+                var config = createConfig(position);
+                new Chart(ctx, config);
+            });
+        };
+    </script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/raphael-min.js"></script>
+    <script src="./js/livicons-customizer-1.4.js"></script>
 
 </html>

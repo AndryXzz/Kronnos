@@ -1,100 +1,158 @@
+
+/******************** General ********************/
 body {
-  min-width: 460px;
-  flex-flow: inherit;
+  line-height: 0.8;
 }
-.caja0 {
-    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-    color: #ffffff;
-    font-size: 18px;
-    width: 90%;
-    text-align: center;
-    background: #ffffff;
-    margin: 1.5% 1.5% 1.5% 1.5%;
-    padding: 20px;
-    float: left;
-    border: #7a7a7a 3px solid;
-    border-radius: 35px 35px 35px 35px;
-    min-width: 440px;
-    position:relative;
-  }
 
+h3 {
+  margin-top: 5%;
+  font-weight: bold;
+}
 
-.caja1 {
+a {
+  transition: transform 0.3s;
+  text-decoration: none;
+  color: black;
+}
+
+/******************** Dashboards ********************/
+
+#container {
+  background: white;
+}
+
+#container h5 {
+  margin: 2rem 0 0 2rem;
+}
+
+#row {
+  background: white;
+  border: grey 3px solid;
+  border-radius: 35px 35px 35px 35px;
+  margin: 1%;
+}
+
+#caja1 {
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-  color: #ffffff;
+  color: white;
   font-size: 18px;
   text-align: center;
-  background: #0000ff;
-  margin: 1.5% 1.5% 1.5% 1.5%;
-  padding: 20px;
-  border-radius: 35px 0px 35px 0px;
-  display: inline-block;
-  min-width: 240px;
+  background: blue;
   box-shadow: 10px 10px 10px #0000ff80;
-}
-
-.caja2 {
-  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-  color: #000000;
-  font-size: 18px;
-  text-align: center;
-  background: #00ff00;
-  box-shadow: 10px 10px 10px #00ff0080;
-  margin: 1.5% 1.5% 1.5% 1.5%;
-  padding: 20px;
+  margin: 2.5%;
   border-radius: 35px 0px 35px 0px;
-  display: inline-block;
-  min-width: 240px;
-  
+  min-width: 290px;
+  max-width: 350px;
+  border-bottom: 2px solid;
 }
 
-.caja3 {
+#caja1 h1 {
+  word-spacing: 10pt;
+}
+
+#caja2 h2 {
+  word-spacing: 10pt;
+}
+
+#caja3 h1 {
+  word-spacing: 10pt;
+}
+
+#caja2 {
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-  color: #ffffff;
+  color: white;
   font-size: 18px;
   text-align: center;
-  background: #ff0000;
+  background: green;
+  box-shadow: 10px 10px 10px #00920080;
+  margin: 2.5%;
+  border-radius: 35px 0px 35px 0px;
+  min-width: 290px;
+  max-width: 350px;
+  border-bottom: 2px solid;
+}
+
+#caja3 {
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  background: red;
   box-shadow: 10px 10px 10px #ff000080;
-  margin: 1.5% 1.5% 1.5% 1.5%;
-  padding: 20px;
+  margin: 2.5%;
   border-radius: 35px 0px 35px 0px;
-  display: inline-block;
-  min-width: 240px;
-  
+  min-width: 290px;
+  max-width: 350px;
+  border-bottom: 2px solid;
 }
 
-.caja4 {
+#caja4 {
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-  color: #000000;
-  font-size: 18px;
+  color: black;
   text-align: center;
-  background: #e0e0e0;
-  margin: 1.5% 1.5% 1.5% 1.5%;
-  padding: 20px;
-  border-radius: 35px 0px 35px 0px;
-  display: inline-block;
-  min-width: 400px;
-  max-width: 400px;
-  box-shadow: 10px 10px 10px #7c7c7c80;
+  background: Gainsboro;
+  margin: 2.5%;
+  box-shadow: 10px 10px 10px grey;
+  min-width: 300px;
+  max-width: 450px;
+  border-bottom: 2px solid white;
 }
 
-h3, h1 {
-    margin: 0%;
+#caja5 {
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  color: black;
+  text-align: center;
+  background: Gainsboro;
+  margin: 1.5%;
+  box-shadow: 10px 10px 10px grey;
+  min-width: 300px;
+  max-width: 450px;
+  height: 230px;
+  border-bottom: 2px solid white;
 }
 
-table {
-    margin:auto;
-    width: 100%;
+#scroll {
+  overflow: scroll;
+  max-height: 250px;
+  overflow-x: unset;
+  scroll-behavior: smooth;
+  /* background: #f5f3f3; */
+  max-width: 450px;
 }
 
-#table {
-  border: #616161 3px solid;
+#table td:hover {
+  background-color: white;
 }
 
-.table td, .table th{
-  border: #616161 1px solid;
+#progress {
+  height: 26px;
+  width: 70%;
+  border-radius: 30px;
+  border: black 1px solid;
+  float: left;
 }
 
-td:hover {
-  background-color: rgba(255, 0, 0, 0.473);
+#progress h5 {
+  font-weight: bold;
+}
+
+/******************** Perfil Usuario ********************/
+
+#fonfoto {
+  background-image: url("https://besthqwallpapers.com/Uploads/8-4-2019/86758/thumb2-white-wavy-background-4k-abstract-waves-creative-white-backgrounds.jpg");
+  margin: 1% 1% 1% 4%;
+  border-radius: 35px 35px 35px 35px;
+  text-align: center;
+  max-width: 100%;
+}
+/* #fonfoto:hover {
+  filter: blur(6px);
+} */
+
+.img-fluid {
+  max-height: 200px;
+}
+
+#btnright {
+  margin-right: 1%;
 }
