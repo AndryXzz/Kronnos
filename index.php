@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recepción</title>
+    <title>Kronnos</title>
+    <link rel="shortcut icon" href="img/faviconxd.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script>
@@ -38,11 +39,11 @@
 <body>
     <div id="login">
         <div>
-            <img src="img/kronnos logo.png" alt="LOGO" srcset="" style="display: inline-block;margin-bottom: 18px;">
+            <img src="img/kronnos logo.png" alt="LOGO" id="logoo">
             <form method="POST" action="dashboard.php" style="display: inline-block;">
-                <label><strong>Iniciar Sesión</strong></label>
-                <input type="text" name="cc" placeholder="        Nombre" required="">
-                <input type="password" name="ps" id="pass" required="" placeholder="        Contraseña">
+                <label style="margin-bottom: 12px;"><strong>Iniciar Sesión</strong></label>
+                <input type="text" name="cc" placeholder=" &#xf007;     # de Documento" required="">
+                <input type="password" name="ps" id="pass" required="" placeholder="&#xf09c;        Contraseña">
                 <br><br>
                 <input type="submit" value="Ingresar">
             </form>

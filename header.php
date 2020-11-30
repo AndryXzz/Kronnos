@@ -15,9 +15,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kronnos</title>
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="img/faviconxd.ico" type="image/x-icon">
 
 
     <!--        Etilos Yamid Cano         -->
@@ -54,7 +55,7 @@
                             <i class="fa fa-users"></i> <span><a href="Users.php">Usuarios</a></span>
                         </li>
                         <li>
-                            <i class="fa fa-bar-chart"></i> <span>Contabilidad</span>
+                            <i class="fa fa-bar-chart"></i> <span><a href="Facturas.php">Contabilidad</a></span>
                         </li>
                         <li>
                             <i class="fa fa-archive"></i> <span>Inventario</span>
@@ -79,6 +80,9 @@
                 <a href="perfilUsuario.php">
                     <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                 </a>
+                <a id="offSes">
+                    <i class="fa fa-power-off" aria-hidden="true"></i>
+                </a>
                 <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
                     <a class="dropdown-item" href="#">Dropdown link</a>
                     <a class="dropdown-item" href="#">Dropdown link</a>
@@ -86,4 +90,12 @@
                 
             </div>
         </div>
+        <script>
+            document.getElementById("offSes").addEventListener('click', function(){
+                let salir = confirm("¿Seguro desea cerrar sesión?");
+                if (salir) {
+                    location.href="cerrarSesion.php";
+                }
+            });
+        </script>
     <div class="content-body">

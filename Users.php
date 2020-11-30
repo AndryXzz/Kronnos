@@ -20,9 +20,11 @@
 <div id="modal"></div>
 <div class="tableCont">
     <div class="btncont">
-        <span>Usuarios</span>
+        
+        <span><i class="fa fa-user-circle-o"></i>&nbsp;Usuarios</span>
         <button class="butn" id="create">Crear nuevo Usuario</button>
     </div>
+    <hr>
     <br><br>
         <table class="tableStyle" cellpadding="10" cellspacing="0">
             <thead>
@@ -42,9 +44,8 @@
                 <?php
                     // var_dump($rows);
                     foreach ($rows as $x => $row) {
-                        $clase = $x%2 ? "add" : "abb" ;
                         echo"
-                        <tr class='$clase'>
+                        <tr>
                             <td>
                                 <span>$row[Cedula]</span>
                             </td>
@@ -110,7 +111,7 @@
             }
 
             modal.innerHTML = `
-            <div style="margin:5% 30% 0px 30%; padding: unset;  max-height: 80%; overflow-y: scroll;direction: rtl;">
+            <div style="margin:5% 30% 0px 30%; padding: unset;  max-height: 80%; overflow-y: scroll;direction: rtl;" class="scroll">
                 <button id="closeModal">X</button>
                 <form id="formm" action="${action}" method="POST">
                     ${infoID}
@@ -238,6 +239,6 @@
 
     <a href="cerrarSesion.php">Cerrar Sesión</a>
     </div>
-</body>
-
-</html> 
+    <?php
+        require_once("footer.php");
+    ?>

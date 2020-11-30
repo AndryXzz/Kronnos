@@ -69,48 +69,48 @@
 <!-- Modal -->
 <div class="modal fade" id="editar" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Editar Usuario</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Editar Usuario</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th scope="row">Nombre</th>
+                            <td><input type="text" class="form-control" value="Pepito"></td>
+                            <th scope="row">Apellido</th>
+                            <td><input type="text" class="form-control" value="Perez"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Correo</th>
+                            <td><input type="text" class="form-control" value="Pepito @gmaol.com"></td>
+                            <th scope="row">Genero</th>
+                            <td><input type="text" class="form-control" value="Sin Definir"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Cedula</th>
+                            <td><input type="text" class="form-control" value="1.563.228"></td>
+                            <th scope="row">Direccion</th>
+                            <td><input type="text" class="form-control" value="Calle avenida suba"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Subir Foto</th>
+                            <td><input type="file" name="archivosubido"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
         </div>
-        <div class="modal-body">
-            <table class="table">
-                <tbody>
-                    <tr>
-                        <th scope="row">Nombre</th>
-                        <td><input type="text" class="form-control" value="Pepito"></td>
-                        <th scope="row">Apellido</th>
-                        <td><input type="text" class="form-control" value="Perez"></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Correo</th>
-                        <td><input type="text" class="form-control" value="Pepito @gmaol.com"></td>
-                        <th scope="row">Genero</th>
-                        <td><input type="text" class="form-control" value="Sin Definir"></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Cedula</th>
-                        <td><input type="text" class="form-control" value="1.563.228"></td>
-                        <th scope="row">Direccion</th>
-                        <td><input type="text" class="form-control" value="Calle avenida suba"></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Subir Foto</th>
-                        <td><input type="file" name="archivosubido"></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
     </div>
-  </div>
+</div>
 </body>
 
     <script src="./js/popper.min.js"></script>
