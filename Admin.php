@@ -7,7 +7,7 @@
     }
 ?>
 
-    <link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/style.css">
 
 <div class="container-fluid" id="container">
     <div class="row">
