@@ -310,4 +310,6 @@ div.scroll::-webkit-scrollbar-track {
     padding: 8px;
     border: grey 2px solid;
     border-radius: 15px;
+    max-height: 95%;
+    overflow-y: scroll;
 }

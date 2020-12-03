@@ -58,7 +58,7 @@
                             <i class="fa fa-bar-chart"></i> <span><a href="Facturas.php?n=Contabilidad">Contabilidad</a></span>
                         </li>
                         <li>
-                            <i class="fa fa-archive"></i> <span>Inventario</span>
+                            <i class="fa fa-archive"></i> <span><a href="Inventario.php?n=Inventario">Inventario</a></span>
                         </li>
                     </ul>
                 </div>
