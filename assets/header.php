@@ -68,7 +68,7 @@
 <?php }else{ ?> <style>.content-body{margin:0px; width:100%;}</style> <?php }?>
 <div class="top-menu">
             <div class="icons">
-                <a href="tienda.php?n=Tienda">
+                <a href="../credihogar_tienda.php">
                     <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                 </a>
                 <!-- <a href="">
