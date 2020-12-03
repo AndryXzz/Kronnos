@@ -20,7 +20,7 @@ try {
         $contradb = ($rows[0]['Contraseña']);
         // echo($contradb);
         if ($contradb === $pass) { //Entra a página
-            $page = '../vistas/'. $rows[0]['rol'].'.php';
+            $page = '../vistas/'. $rows[0]['rol'].'.php?n=Dashboard';
             session_start();
             $_SESSION['user'] =  $rows[0];
         }else{ //contra incorrecta

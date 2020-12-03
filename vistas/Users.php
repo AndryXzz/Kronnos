@@ -19,13 +19,11 @@
 ?>
 <div id="modal"></div>
 <div class="tableCont">
-    <div class="btncont">
-        
-        <span><i class="fa fa-user-circle-o"></i>&nbsp;Usuarios</span>
+    <div class="btncont">        
         <button class="butn" id="create">Crear nuevo Usuario</button>
     </div>
     <hr>
-    <br><br>
+    <br>
         <table class="tableStyle" cellpadding="10" cellspacing="0">
             <thead>
                 <tr>
@@ -237,8 +235,7 @@
     </script>
     <hr>
 
-    <a href="cerrarSesion.php">Cerrar Sesión</a>
     </div>
     <?php
-        require_once("footer.php");
+        require_once("../assets/footer.php");
     ?>

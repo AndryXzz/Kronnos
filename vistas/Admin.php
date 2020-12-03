@@ -10,12 +10,7 @@
 <link rel="stylesheet" href="../css/style.css">
 
 <div class="container-fluid" id="container">
-    <div class="row">
-        <h5><span class="livicon" data-name="dashboard" data-c="dark" data-s="30" data-loop="true"
-            data-hovercolor="dark"></span> Dashboard</h5>
-    </div>
-    <div id="row">
-        <div class="row justify-content-center">
+    <div class="row justify-content-center">
             <div id="caja1" class="col-3">
                 <h3>Clientes</h3>
                 <h1 data-toggle="tooltip" data-placement="top" title="Numero de clientes">
@@ -89,8 +84,7 @@
         </div>
         <br>
         <br>
-    </div>
-    <br>
+        <br>
 </div>
 
 </body>

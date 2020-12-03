@@ -279,7 +279,6 @@ textarea {
 }
 .btncont {
     text-align: right;
-    margin-right: 36px !important;
 }
 
 div.scroll {
@@ -305,4 +304,10 @@ div.scroll::-webkit-scrollbar-thumb {
 div.scroll::-webkit-scrollbar-track {
     background-color: #ffffff38;
     border-radius: 5px;
+}
+
+#row {
+    padding: 8px;
+    border: grey 2px solid;
+    border-radius: 15px;
 }

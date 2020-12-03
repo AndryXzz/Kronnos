@@ -49,13 +49,13 @@
                 <div class="options">
                     <ul>
                         <li>
-                            <i class="fa fa-home"></i> <span><a href="Admin.php">Dashboard</a></span>
+                            <i class="fa fa-home"></i> <span><a href="Admin.php?n=Dashboard">Dashboard</a></span>
                         </li>
                         <li>
-                            <i class="fa fa-users"></i> <span><a href="Users.php">Usuarios</a></span>
+                            <i class="fa fa-users"></i> <span><a href="Users.php?n=Usuarios">Usuarios</a></span>
                         </li>
                         <li>
-                            <i class="fa fa-bar-chart"></i> <span><a href="Facturas.php">Contabilidad</a></span>
+                            <i class="fa fa-bar-chart"></i> <span><a href="Facturas.php?n=Contabilidad">Contabilidad</a></span>
                         </li>
                         <li>
                             <i class="fa fa-archive"></i> <span>Inventario</span>
@@ -68,15 +68,15 @@
 <?php }else{ ?> <style>.content-body{margin:0px; width:100%;}</style> <?php }?>
 <div class="top-menu">
             <div class="icons">
-                <a href="cliente.php">
+                <a href="tienda.php?n=Tienda">
                     <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                 </a>
-                <a href="">
+                <!-- <a href="">
                     <i class="fa fa-search" aria-hidden="true"></i>
                 </a>
                 <a href="">
                     <i class="fa fa-bell" aria-hidden="true"></i>
-                </a>
+                </a> -->
                 <a href="perfilUsuario.php">
                     <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                 </a>
@@ -95,3 +95,10 @@
             });
         </script>
     <div class="content-body">
+    <div>
+        <h5><span class="livicon" data-name="dashboard" data-c="dark" data-s="30" data-loop="true"
+            data-hovercolor="dark"></span> <span><?= $_GET['n']; ?></span></h5>
+    </div>
+    <div id="row">
+
+    

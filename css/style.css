@@ -21,13 +21,6 @@ a {
     margin: 2rem 0 0 2rem;
 }
 
-#row {
-    background: white;
-    border: grey 3px solid;
-    border-radius: 35px 35px 35px 35px;
-    margin: 1%;
-}
-
 #caja1 {
     font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
     color: white;
