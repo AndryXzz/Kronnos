@@ -23,82 +23,89 @@ a {
 
 #caja1 {
     font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-    color: white;
+    color: #000000;
     font-size: 18px;
     text-align: center;
-    background: blue;
-    box-shadow: 10px 10px 10px #0000ff80;
+    background: #56B7F5;
+    box-shadow: 10px 10px 10px #56B7F595;
     margin: 2.5%;
     border-radius: 35px 0px 35px 0px;
     min-width: 290px;
     max-width: 350px;
     border-bottom: 2px solid;
-}
-
-#caja1 h1 {
+    border-top: 2px solid;
+  }
+  
+  #caja1 h1 {
     word-spacing: 10pt;
-}
-
-#caja2 h2 {
+  }
+  
+  #caja2 h2 {
     word-spacing: 10pt;
-}
-
-#caja3 h1 {
+  }
+  
+  #caja3 h1 {
     word-spacing: 10pt;
-}
-
-#caja2 {
+  }
+  
+  #caja2 {
     font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-    color: white;
+    color: #000000;
     font-size: 18px;
     text-align: center;
-    background: green;
-    box-shadow: 10px 10px 10px #00920080;
+    background: #F5F387;
+    box-shadow: 10px 10px 10px #F5F38795;
     margin: 2.5%;
     border-radius: 35px 0px 35px 0px;
     min-width: 290px;
     max-width: 350px;
     border-bottom: 2px solid;
-}
-
-#caja3 {
+    border-top: 2px solid;
+  }
+  
+  #caja3 {
     font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-    color: white;
+    color: #000000;
     font-size: 18px;
     text-align: center;
-    background: red;
-    box-shadow: 10px 10px 10px #ff000080;
+    background: #F56E6E;
+    box-shadow: 10px 10px 10px #F56E6E95;
     margin: 2.5%;
     border-radius: 35px 0px 35px 0px;
     min-width: 290px;
     max-width: 350px;
     border-bottom: 2px solid;
-}
-
-#caja4 {
+    border-top: 2px solid;
+  }
+  
+  #caja4 {
     font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
     color: black;
     text-align: center;
-    background: Gainsboro;
+    background: #f8f9fa;
     margin: 2.5%;
     box-shadow: 10px 10px 10px grey;
     min-width: 300px;
     max-width: 450px;
-    border-bottom: 2px solid white;
-}
-
-#caja5 {
+    border-radius: 35px 0px 35px 0px;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+  }
+  
+  #caja5 {
     font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
     color: black;
     text-align: center;
-    background: Gainsboro;
-    margin: 1.5%;
+    background: #f8f9fa;
+    margin: 1.2%;
     box-shadow: 10px 10px 10px grey;
     min-width: 300px;
     max-width: 450px;
     height: 230px;
-    border-bottom: 2px solid white;
-}
+    border-radius: 35px 0px 35px 0px;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+  }
 
 #scroll {
     overflow: scroll;

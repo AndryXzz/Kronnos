@@ -77,7 +77,7 @@
                 <a href="">
                     <i class="fa fa-bell" aria-hidden="true"></i>
                 </a> -->
-                <a href="perfilUsuario.php">
+                <a href="perfilUsuario.php?n=Perfil De Usuario">
                     <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                 </a>
                 <a id="offSes">

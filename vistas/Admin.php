@@ -15,24 +15,24 @@
                 <h3>Clientes</h3>
                 <h1 data-toggle="tooltip" data-placement="top" title="Numero de clientes">
                     351
-                    <span class="livicon" data-name="users" data-c="White" data-s="60" data-loop="true"
-                                data-hovercolor="White"></span>
+                    <span class="livicon" data-name="users" data-c="dark" data-s="60" data-loop="true"
+                                data-hovercolor="dark"></span>
                 </h1>
             </div>
             <div id="caja2" class="col-3">
                 <h3>Ventas Diarias</h3>
                 <h2 data-toggle="tooltip" data-placement="top" title="Ventas diarias">
                     $3.689.500 
-                    <span class="livicon" data-name="money" data-c="white" data-s="60" data-loop="true"
-                        data-hovercolor="white"></span>
+                    <span class="livicon" data-name="money" data-c="dark" data-s="60" data-loop="true"
+                        data-hovercolor="dark"></span>
                 </h2>
             </div>
             <div id="caja3" class="col-3">
                 <h3>Cantidad Ventas</h3>
                 <h1 data-toggle="tooltip" data-placement="top" title="Numero de ventas diarias">
                     50
-                    <span class="livicon" data-name="truck" data-c="White" data-s="60" data-loop="true"
-                    data-hovercolor="White"></span>
+                    <span class="livicon" data-name="truck" data-c="dark" data-s="60" data-loop="true"
+                    data-hovercolor="dark"></span>
                 </h1>
 
             </div>
@@ -87,7 +87,7 @@
         <br>
 </div>
 
-</body>
+
 
 
 <script>
@@ -142,9 +142,5 @@
             });
         };
     </script>
-    <script src="../js/popper.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/raphael-min.js"></script>
-    <script src="../js/livicons-customizer-1.4.js"></script>
 
-</html>
+<?php require_once("../assets/footer.php");?>

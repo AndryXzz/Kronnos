@@ -10,24 +10,24 @@
             <h3>Cuotas Pagadas</h3>
             <h1 data-toggle="tooltip" data-placement="top" title="Numero de cuotas pagadas">
                 02
-                <span class="livicon" data-name="piggybank" data-c="White" data-s="60" data-loop="true"
-                            data-hovercolor="White"></span>
+                <span class="livicon" data-name="piggybank" data-c="Dark" data-s="60" data-loop="true"
+                            data-hovercolor="Dark"></span>
             </h1>
         </div>
         <div id="caja2" class="col-3">
             <h3>Saldo Pendiente</h3>
             <h2 data-toggle="tooltip" data-placement="top" title="Saldo Pendiente">
                 $220.000
-                <span class="livicon" data-name="money" data-c="white" data-s="60" data-loop="true"
-                            data-hovercolor="white"></span>
+                <span class="livicon" data-name="money" data-c="Dark" data-s="60" data-loop="true"
+                            data-hovercolor="Dark"></span>
             </h2>
         </div>
         <div id="caja3" class="col-3">
             <h3>Cuotas Por Pagar</h3>
             <h1 data-toggle="tooltip" data-placement="top" title="Numero de cuotas por pagar">
                 50
-                <span class="livicon" data-name="credit-card" data-c="White" data-s="60" data-loop="true"
-                        data-hovercolor="White"></span>
+                <span class="livicon" data-name="credit-card" data-c="Dark" data-s="60" data-loop="true"
+                        data-hovercolor="Dark"></span>
             </h1>
         </div>
     </div>

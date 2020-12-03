@@ -13,10 +13,7 @@
 
 <div class="container-fluid" id="container">
     <div class="row align-items-end">
-        <div class="col">
-            <h5><span class="livicon shadowed" data-name="user" data-c="dark" data-s="30" data-onparent="true"
-                data-hovercolor="dark"></span> <a href="Admin.php">Dashboard</a>\Perfil-Usuario</h5>
-        </div>
+
         <div id="btnright" class="col text-right">
             <a href="#" class="btn btn-info" role="button" data-toggle="tooltip" data-placement="top" title="Editar Usuario">
                 <span data-toggle="modal" data-target="#editar">
@@ -27,7 +24,7 @@
         </div>
         
     </div>
-    <div id="row">
+    <div >
         <div class="row justify-content-center">
             <div id="fonfoto" class="col-3">
                 <div>
