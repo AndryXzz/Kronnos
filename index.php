@@ -40,7 +40,7 @@
     <div id="login">
         <div>
             <img src="img/kronnos logo.png" alt="LOGO" id="logoo">
-            <form method="POST" action="dashboard.php" style="display: inline-block;">
+            <form method="POST" action="controladores/dashboard.php" style="display: inline-block;">
                 <label style="margin-bottom: 12px;"><strong>Iniciar Sesión</strong></label>
                 <input type="text" name="cc" placeholder=" &#xf007;     # de Documento" required="">
                 <input type="password" name="ps" id="pass" required="" placeholder="&#xf09c;        Contraseña">

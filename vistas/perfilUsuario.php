@@ -1,5 +1,5 @@
 <?php
-    require_once("header.php");
+    require_once("../assets/header.php");
     // var_dump($_SESSION['user']);
     if ($infoSession['rol'] != "Admin") {
         header("location:index.php?est=3");
@@ -7,7 +7,7 @@
     }
 ?>
  
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
     
 
@@ -31,7 +31,7 @@
         <div class="row justify-content-center">
             <div id="fonfoto" class="col-3">
                 <div>
-                    <img src="./img/user-defaul.png" class="img-fluid" alt="Responsive image" alt="...">
+                    <img src="../img/user-defaul.png" class="img-fluid" alt="Responsive image" alt="...">
                 </div>
                 <h3>Pepito Perez</h3>
             </div>
@@ -113,9 +113,9 @@
 </div>
 </body>
 
-    <script src="./js/popper.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/raphael-min.js"></script>
-    <script src="./js/livicons-customizer-1.4.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/raphael-min.js"></script>
+    <script src="../js/livicons-customizer-1.4.js"></script>
 
 </html>

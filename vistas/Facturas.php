@@ -1,5 +1,5 @@
 <?php
-    require_once("header.php");
+    require_once("../assets/header.php");
     // var_dump($_SESSION['user']);
     if ($infoSession['rol'] != "Admin" &&  $infoSession['rol'] != "Contador" ) {
         header("location:index.php?est=3");

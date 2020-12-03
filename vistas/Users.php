@@ -1,5 +1,5 @@
 <?php
-    require_once("header.php");
+    require_once("../assets/header.php");
     // var_dump($_SESSION['user']);
     if ($infoSession['rol'] != "Admin") {
         header("location:index.php?est=3");
@@ -111,7 +111,7 @@
             }
 
             modal.innerHTML = `
-            <div style="margin:5% 30% 0px 30%; padding: unset;  max-height: 80%; overflow-y: scroll;direction: rtl;" class="scroll">
+            <div style="margin:5% 30% 0px 30%; padding: unset;  max-height: 80%; overflow-y: scroll;direction: rtl;" class="scroll contentModal">
                 <button id="closeModal">X</button>
                 <form id="formm" action="${action}" method="POST">
                     ${infoID}

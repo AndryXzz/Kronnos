@@ -4,7 +4,7 @@ header('Content-Type: text/html; charset=UTF-8');
 $id = $_POST["cc"];
 $pass = $_POST["ps"];
 // Conecto a base de datos
-require_once("header.php");
+require_once("../assets/header.php");
 // <----------------------------------------------------------------->
 $page = '';
 try {
@@ -20,15 +20,15 @@ try {
         $contradb = ($rows[0]['Contraseña']);
         // echo($contradb);
         if ($contradb === $pass) { //Entra a página
-            $page = $rows[0]['rol'].'.php';
+            $page = '../vistas/'. $rows[0]['rol'].'.php';
             session_start();
             $_SESSION['user'] =  $rows[0];
         }else{ //contra incorrecta
-            $page = "index.php?est=1";
+            $page = "../index.php?est=1";
         }
 
     }else{ //si no, retorna a login
-        $page = "index.php?est=2";
+        $page = "../index.php?est=2";
     }
 
     header('Location:'.$page);

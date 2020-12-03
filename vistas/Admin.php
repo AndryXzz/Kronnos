@@ -1,5 +1,5 @@
 <?php
-    require_once("header.php");
+    require_once("../assets/header.php");
     // var_dump($_SESSION['user']);
     if ($infoSession['rol'] != "Admin") {
         header("location:index.php?est=3");
@@ -7,7 +7,7 @@
     }
 ?>
 
-<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="../css/style.css">
 
 <div class="container-fluid" id="container">
     <div class="row">
@@ -148,9 +148,9 @@
             });
         };
     </script>
-    <script src="./js/popper.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/raphael-min.js"></script>
-    <script src="./js/livicons-customizer-1.4.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/raphael-min.js"></script>
+    <script src="../js/livicons-customizer-1.4.js"></script>
 
 </html>

@@ -16,16 +16,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kronnos</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="img/faviconxd.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/faviconxd.ico" type="image/x-icon">
 
 
     <!--        Etilos Yamid Cano         -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <script src="./js/jquery-3.5.1.slim.min.js"></script>
-    <script src="./js/Chart.min.js"></script>
-    <script src="./js/utils.js"></script>
+    <link rel="stylesheet" href=".././css/bootstrap.min.css">
+    <script src=".././js/jquery-3.5.1.slim.min.js"></script>
+    <script src=".././js/Chart.min.js"></script>
+    <script src=".././js/utils.js"></script>
     <script>
         $(function () {
             $('[data-toggle="tooltip"]').tooltip()
@@ -36,11 +36,11 @@
 
 </head>
 
-<body background="img/OIP.jpg">
+<body background="../img/OIP.jpg">
 <?php if($infoSession['rol'] != "Cliente") { ?>
     <header>
         <div class="left-menu">
-            <div class="logo"><img src="img/kronnos logo.png" alt="Logo" srcset=""></div>
+            <div class="logo"><img src="../img/kronnos logo.png" alt="Logo" srcset=""></div>
             <div class="content">
                 <div id="usr">
                     <i class="fa fa-user" style="font-size:48px;"></i> <span>Bienvenido
@@ -83,10 +83,6 @@
                 <a id="offSes">
                     <i class="fa fa-power-off" aria-hidden="true"></i>
                 </a>
-                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                    <a class="dropdown-item" href="#">Dropdown link</a>
-                    <a class="dropdown-item" href="#">Dropdown link</a>
-                </div>
                 
             </div>
         </div>
@@ -94,7 +90,7 @@
             document.getElementById("offSes").addEventListener('click', function(){
                 let salir = confirm("¿Seguro desea cerrar sesión?");
                 if (salir) {
-                    location.href="cerrarSesion.php";
+                    location.href="../controladores/cerrarSesion.php";
                 }
             });
         </script>

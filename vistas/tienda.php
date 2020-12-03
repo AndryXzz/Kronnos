@@ -1,4 +1,4 @@
-<?php require_once("header.php");?>
+<?php require_once("../assets/header.php"); ?>
 <style type="text/css">
     input {
         font-size: 120%;
