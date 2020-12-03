@@ -40,7 +40,7 @@
 <?php if($infoSession['rol'] != "Cliente") { ?>
     <header>
         <div class="left-menu">
-            <div class="logo"><img src="../img/kronnos logo.png" alt="Logo" srcset=""></div>
+            <div class="logo"><img src="../img/kronnos_logo.png" alt="Logo" srcset=""></div>
             <div class="content">
                 <div id="usr">
                     <i class="fa fa-user" style="font-size:48px;"></i> <span>Bienvenido

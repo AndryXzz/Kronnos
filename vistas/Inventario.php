@@ -7,24 +7,33 @@
     }
 ?>
 <style>
-    .tableStyle tbody tr td:nth-child(3) {
-        color: #429642;
-    }
+.tableStyle tbody tr td:nth-child(3) {
+    color: #429642;
+}
+
+#tFact img {
+    width: 50px;
+}
 </style>
 <table class="tableStyle" id="tFact" cellpadding="10">
     <thead>
         <tr>
-            <th># Factura</th>
-            <th>Estado</th>
-            <th>Total</th>
+            <th># Articulo</th>
+            <th>Nombre</th>
+            <th>Tipo Articulo</th>
+            <th>Foto</th>
+            <th>Descripcion</th>
             <th>Opciones</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td>1</td>
-            <td>Debe</td>
-            <td>150000</td>
+            <td>Felpa Color Crema</td>
+            <td>Cubre lecho</td>
+            <td><img id="img" src="../img/img_tienda/felpa-crema_12.jpg" alt=""></td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra rutrum felis id aliquam.
+                Curabitur.</td>
             <td>
                 <button>Editar</button>
                 <button>Ver</button>
@@ -33,28 +42,39 @@
         </tr>
         <tr>
             <td>2</td>
-            <td>Debe</td>
-            <td>85000</td>
+            <td>Felpa Color Crema</td>
+            <td>Cubre lecho</td>
+            <td><img id="img" src="../img/img_tienda/felpa-crema_12.jpg" alt=""></td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra rutrum felis id aliquam.
+                Curabitur.</td>
             <td>
                 <button>Editar</button>
                 <button>Ver</button>
                 <button>Eliminar</button>
             </td>
         </tr>
+        <tr>
         <tr>
             <td>3</td>
-            <td>Pagado</td>
-            <td>36500</td>
+            <td>Felpa Color Crema</td>
+            <td>Cubre lecho</td>
+            <td><img id="img" src="../img/img_tienda/felpa-crema_12.jpg" alt=""></td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra rutrum felis id aliquam.
+                Curabitur.</td>
             <td>
                 <button>Editar</button>
                 <button>Ver</button>
                 <button>Eliminar</button>
             </td>
         </tr>
+        <tr>
         <tr>
             <td>4</td>
-            <td>Debe</td>
-            <td>100000</td>
+            <td>Felpa Color Crema</td>
+            <td>Cubre lecho</td>
+            <td><img id="img" src="../img/img_tienda/felpa-crema_12.jpg" alt=""></td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra rutrum felis id aliquam.
+                Curabitur.</td>
             <td>
                 <button>Editar</button>
                 <button>Ver</button>
@@ -62,9 +82,13 @@
             </td>
         </tr>
         <tr>
-            <td>5</td>
-            <td>Debe</td>
-            <td>57000</td>
+        <tr>
+        <td>5</td>
+        <td>Felpa Color Crema</td>
+            <td>Cubre lecho</td>
+            <td><img id="img" src="../img/img_tienda/felpa-crema_12.jpg" alt=""></td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra rutrum felis id aliquam.
+                Curabitur.</td>
             <td>
                 <button>Editar</button>
                 <button>Ver</button>
@@ -72,39 +96,41 @@
             </td>
         </tr>
         <tr>
-            <td>6</td>
-            <td>Debe</td>
-            <td>62000</td>
-            <td>
-                <button>Editar</button>
-                <button>Ver</button>
-                <button>Eliminar</button>
-            </td>
-        </tr>
         <tr>
             <td>7</td>
-            <td>Pagado</td>
-            <td>250000</td>
+            <td>Felpa Color Crema</td>
+            <td>Cubre lecho</td>
+            <td><img id="img" src="../img/img_tienda/felpa-crema_12.jpg" alt=""></td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra rutrum felis id aliquam.
+                Curabitur.</td>
             <td>
                 <button>Editar</button>
                 <button>Ver</button>
                 <button>Eliminar</button>
             </td>
         </tr>
+        <tr>
         <tr>
             <td>8</td>
-            <td>Debe</td>
-            <td>150000</td>
+            <td>Felpa Color Crema</td>
+            <td>Cubre lecho</td>
+            <td><img id="img" src="../img/img_tienda/felpa-crema_12.jpg" alt=""></td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra rutrum felis id aliquam.
+                Curabitur.</td>
             <td>
                 <button>Editar</button>
                 <button>Ver</button>
                 <button>Eliminar</button>
             </td>
         </tr>
+        <tr>
         <tr>
             <td>9</td>
-            <td>Debe</td>
-            <td>20000</td>
+            <td>Felpa Color Crema</td>
+            <td>Cubre lecho</td>
+            <td><img id="img" src="../img/img_tienda/felpa-crema_12.jpg" alt=""></td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra rutrum felis id aliquam.
+                Curabitur.</td>
             <td>
                 <button>Editar</button>
                 <button>Ver</button>
@@ -112,15 +138,20 @@
             </td>
         </tr>
         <tr>
+        <tr>
             <td>10</td>
-            <td>Debe</td>
-            <td>110000</td>
+            <td>Felpa Color Crema</td>
+            <td>Cubre lecho</td>
+            <td><img id="img" src="../img/img_tienda/felpa-crema_12.jpg" alt=""></td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra rutrum felis id aliquam.
+                Curabitur.</td>
             <td>
                 <button>Editar</button>
                 <button>Ver</button>
                 <button>Eliminar</button>
             </td>
         </tr>
+        <tr>
     </tbody>
 </table>
 <div id="modal">
@@ -130,14 +161,14 @@
 
 </div>
 <script>
-    const modal = document.getElementById("modal");
+const modal = document.getElementById("modal");
 
-    var abrirmodal = function (e) {
-        aparecer();
-        let tipo = e.path[0].innerText;
+var abrirmodal = function(e) {
+    aparecer();
+    let tipo = e.path[0].innerText;
 
 
-        modal.innerHTML = `
+    modal.innerHTML = `
             <div style="margin:5% 15% 0px 15%; padding: unset;  max-height: 80%; overflow-y: scroll;padding-bottom:2em;" class="scroll contentModal">
                 <button class="closeModal" id="closeModal">X</button>
                 <div class="row">
@@ -278,61 +309,70 @@
         </div>
         </div>`;
 
-        cerrar();
-        if (tipo == "Ver") {
-            let inputs = document.getElementsByTagName("input");
-            for (let i = 0; i < inputs.length; i++) {
-                inputs[i].setAttribute("disabled", true);
-            }
-            document.getElementById("botonesModal").style.display = "none";
+    cerrar();
+    if (tipo == "Ver") {
+        let inputs = document.getElementsByTagName("input");
+        for (let i = 0; i < inputs.length; i++) {
+            inputs[i].setAttribute("disabled", true);
         }
-
-    }
-    var cerrar = function () {
-        let x = document.getElementsByClassName("closeModal");
-        x[0].addEventListener("click", function () {
-            modal.style.animation = "cerrar 0.5s ease";
-            setTimeout(function () { modal.style.display = "none"; modal.style.animation = ""; }, 500);
-            modal.innerHTML = ``;
-        });
-
-        x[1].addEventListener("click", function () {
-            modal.style.animation = "cerrar 0.5s ease";
-            setTimeout(function () { modal.style.display = "none"; modal.style.animation = ""; }, 500);
-            modal.innerHTML = ``;
-        });
+        document.getElementById("botonesModal").style.display = "none";
     }
 
-    var aparecer = function () {
-        modal.style.opacity = "0";
-        modal.style.display = "block"
-        modal.style.animation = "aparecer 0.5s ease";
-        setTimeout(function () { modal.style.opacity = ""; modal.style.animation = ""; }, 500);
+}
+var cerrar = function() {
+    let x = document.getElementsByClassName("closeModal");
+    x[0].addEventListener("click", function() {
+        modal.style.animation = "cerrar 0.5s ease";
+        setTimeout(function() {
+            modal.style.display = "none";
+            modal.style.animation = "";
+        }, 500);
+        modal.innerHTML = ``;
+    });
+
+    x[1].addEventListener("click", function() {
+        modal.style.animation = "cerrar 0.5s ease";
+        setTimeout(function() {
+            modal.style.display = "none";
+            modal.style.animation = "";
+        }, 500);
+        modal.innerHTML = ``;
+    });
+}
+
+var aparecer = function() {
+    modal.style.opacity = "0";
+    modal.style.display = "block"
+    modal.style.animation = "aparecer 0.5s ease";
+    setTimeout(function() {
+        modal.style.opacity = "";
+        modal.style.animation = "";
+    }, 500);
+}
+
+var eliminar = function() {
+    confirm("Seguro que desea Eliminar? no se podrá recuperar.");
+}
+
+var botones = document.getElementsByTagName("button");
+for (let i = 0; i < botones.length; i++) {
+    switch (botones[i].innerText) {
+        case "Editar":
+            botones[i].addEventListener("click", abrirmodal, this);
+            break;
+
+        case "Ver":
+            botones[i].addEventListener("click", abrirmodal, this);
+
+            break;
+
+        case "Eliminar":
+            botones[i].addEventListener("click", eliminar);
+
+            break;
     }
 
-    var eliminar = function () {
-        confirm("Seguro que desea Eliminar? no se podrá recuperar.");
-    }
-
-    var botones = document.getElementsByTagName("button");
-    for (let i = 0; i < botones.length; i++) {
-        switch (botones[i].innerText) {
-            case "Editar":
-                botones[i].addEventListener("click", abrirmodal, this);
-                break;
-
-            case "Ver":
-                botones[i].addEventListener("click", abrirmodal, this);
-
-                break;
-
-            case "Eliminar":
-                botones[i].addEventListener("click", eliminar);
-
-                break;
-        }
-
-    }
+}
 </script>
 
 <?php require_once("../assets/footer.php");?>
