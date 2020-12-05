@@ -4,7 +4,7 @@
     <div class="container">
         <div class="navbar">
             <div class="logo">
-                <img src="./kronnos logo.png" alt="">
+                <img src="./img/img_tienda/kronnos_logo.png" alt="">
             </div>
             <nav>
                 <ul>
@@ -23,7 +23,7 @@
                 <a href=""class="btn"> Click Aqui </a>
             </div>
                 <div class="col-2"> 
-                    <img src="./fondo_intro_web_kronnos.jpg" width="600px" alt="">
+                    <img src="./img/img_tienda/fondo_intro_web_kronnos.jpg" width="600px" alt="">
             </div>
         </div>
 
@@ -35,13 +35,13 @@
     <div class="small-container">
       <div class="row">
           <div class="col-3">
-              <img src="./lenceria_intro3.jpg" alt="">
+              <img src="./img/img_tienda/lenceria_intro3.jpg" alt="">
           </div>
           <div class="col-3">
-              <img src="./cama_intro1.jpg" alt="">
+              <img src="./img/img_tienda/cama_intro1.jpg" alt="">
           </div>
           <div class="col-3">
-            <img src="./cama_intro2.jpg" alt="">
+            <img src="./img/img_tienda/cama_intro2.jpg" alt="">
         </div>
     </div>   
           
@@ -52,7 +52,7 @@
     <h2 class="tittle">Productos Destacados</h2>
     <div class="row">
             <div class="col-4">
-                <img src="./felpa-crema_12.jpg">
+                <img src="./img/img_tienda/felpa-crema_12.jpg">
                 <h4>Felpa Color Crema</h4>
                 <div class="ratting">
                     <i class="fa fa-star" ></i>
@@ -64,7 +64,7 @@
                 </div>
             </div>
             <div class="col-4">
-                <img src="./duvet_sabanaajustable.jpg">
+                <img src="./img/img_tienda/duvet_sabanaajustable.jpg">
                 <h4>Sabana Ajustable</h4>
                 <div class="ratting">
                     <i class="fa fa-star" ></i>
@@ -79,7 +79,7 @@
      <h2 class="tittle">ultima coleccion</h2>
      <div class="row">
         <div class="col-4">
-            <img src="./juego-forro-duvet-sabana-hotelero.jpg">
+            <img src="./img/img_tienda/juego-forro-duvet-sabana-hotelero.jpg">
             <h4>Felpa Color Crema</h4>
             <div class="ratting">
                 <i class="fa fa-star" ></i>
@@ -91,7 +91,7 @@
             </div>
         </div>
         <div class="col-4">
-            <img src="./forro_duvet_negro.jpg">
+            <img src="./img/img_tienda/forro_duvet_negro.jpg">
             <h4>Sabana Ajustable</h4>
             <div class="ratting">
                 <i class="fa fa-star" ></i>
@@ -104,7 +104,7 @@
         </div>       
         <div class="row">
             <div class="col-4">
-                <img src="./cama_intro1.jpg">
+                <img src="./img/img_tienda/cama_intro1.jpg">
                 <h4>Felpa Color Crema</h4>
                 <div class="ratting">
                     <i class="fa fa-star" ></i>
@@ -116,7 +116,7 @@
                 </div>
             </div>
             <div class="col-4">
-                <img src="./juego_sabanas_dobleplanchado.jpg">
+                <img src="./img/img_tienda/juego_sabanas_dobleplanchado.jpg">
                 <h4>Sabana Ajustable</h4>
                 <div class="ratting">
                     <i class="fa fa-star" ></i>
@@ -134,7 +134,7 @@
         <div class="small-container">
             <div class="row">
                 <div class="col-2">
-                    <img src="./doble_planchado_offer.webp" class="offer-img">
+                    <img src="./img/img_tienda/doble_planchado_offer.webp" class="offer-img">
                 </div>
                 <div class="col-2">
                     <p>Exclusivos/Credihogar</p>
@@ -169,7 +169,7 @@
                             <i class="fa fa-star"></i>
                             <p>$205.000</p>
                         </div>
-                        <img src="./kronnos logo.png" >
+                        <img src="./img/img_tienda/kronnos_logo.png" >
                 </div>
                 <div class="col-3">
                     <i class="fa fa-quote-left"></i>
@@ -192,7 +192,7 @@
                             <p>$205.000</p>
                         </div>
                         <br>
-                        <img src="./kronnos logo.png" >
+                        <img src="./img/img_tienda/kronnos_logo.png" >
 
             </div>
         </div>
@@ -203,13 +203,13 @@
      <div class="small-container">
          <div class="row">
              <div class="col-5">
-                 <img src="./credihogar_marcas.jpg" >
+                 <img src="./img/img_tienda/credihogar_marcas.jpg" >
              </div>
              <div class="col-5">
-                <img src="./yuzmar_marcas.jpg" >
+                <img src="./img/img_tienda/yuzmar_marcas.jpg" >
             </div>
             <div class="col-5">
-                <img src="./hogar_decor_marcas.png" >
+                <img src="./img/img_tienda/hogar_decor_marcas.png" >
             </div>
          </div>
      </div>

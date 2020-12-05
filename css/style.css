@@ -152,3 +152,10 @@ a {
 #btnright {
     margin-right: 1%;
 }
+
+
+/******************** Inventario ********************/
+
+#tFact img {
+  width: 50px;
+}
