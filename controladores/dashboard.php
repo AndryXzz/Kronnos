@@ -4,7 +4,7 @@ header('Content-Type: text/html; charset=UTF-8');
 $id = $_POST["cc"];
 $pass = $_POST["ps"];
 // Conecto a base de datos
-require_once("../assets/header.php");
+require_once("../controladores/conexion.php");
 // <----------------------------------------------------------------->
 $page = '';
 try {
@@ -23,6 +23,7 @@ try {
             $page = '../vistas/'. $rows[0]['rol'].'.php?n=Dashboard';
             session_start();
             $_SESSION['user'] =  $rows[0];
+            $_SESSION['nVista'] =  "Dashboard";
         }else{ //contra incorrecta
             $page = "../index.php?est=1";
         }
@@ -33,7 +34,7 @@ try {
 
     header('Location:'.$page);
     
-    die();
+    exit;
 
 } catch(PDOException $ex) { //si hay un error en el query, mandará el msj acá
     echo "Ocurrió un error<br>";
