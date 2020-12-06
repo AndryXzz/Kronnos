@@ -85,10 +85,6 @@
                 <a href="" name="selecc">
                     <i class="fa fa-bell" aria-hidden="true"></i>
                 </a> -->
-
-                <a href="perfilUsuario.php?n=Perfil De Usuario">
-                    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-                </a>
                 <a href="Configuraciones.php?n=Configuraciones Tablas">
                     <i class="fa fa-cog" aria-hidden="true"></i>
                 </a>
@@ -99,7 +95,6 @@
                     <i class="fa fa-power-off" aria-hidden="true"></i>
                 </a>
             </div>
-
 
         </div>
     </div>
