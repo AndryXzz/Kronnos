@@ -1,10 +1,10 @@
 <?php
     require_once("../assets/header.php");
-    // var_dump($_SESSION['user']);
     if ($infoSession['rol'] != "Admin") {
-        header("location:index.php?est=3");
-        die();
-    }
+    ?>
+    <script>location.href = "../index.php?est=3"</script>
+    <?php
+
 ?>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 

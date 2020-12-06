@@ -41,7 +41,9 @@
                 <th>ID</th>
                 <th>Departamento</th>
                 <th>Ciudad</th>
-                <th COLSPAN="3">Opciones</th>
+                <th width="60px">Ver</th>
+                <th width="60px">Editar</th>
+                <th width="60px">Eliminar</th>
             </tr>
         </thead>
 
