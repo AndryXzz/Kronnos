@@ -92,17 +92,14 @@
                 <a href="Configuraciones.php?n=Configuraciones Tablas">
                     <i class="fa fa-cog" aria-hidden="true"></i>
                 </a>
-                <a id="offSes">
+                <a href="#" title="Mi cuenta" name="cuenta" onclick="asigEventobtn(this)">
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                </a>
+                <a id="offSes" title="Cerrar Sesión">
                     <i class="fa fa-power-off" aria-hidden="true"></i>
                 </a>
             </div>
 
-            <a href="#" title="Mi cuenta" name="cuenta" onclick="asigEventobtn(this)">
-                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-            </a>
-            <a id="offSes" title="Cerrar Sesión">
-                <i class="fa fa-power-off" aria-hidden="true"></i>
-            </a>
 
         </div>
     </div>

@@ -65,7 +65,7 @@
                         </tr>
                         <tr>
                             <th scope="row">Correo</th>
-                            <td>Pepito @gmaol.com</td>
+                            <td>Pepito</td>
                             <th scope="row">Genero</th>
                             <td>Sin Definir</td>
                         </tr>
