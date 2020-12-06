@@ -80,10 +80,12 @@
                 <a href="perfilUsuario.php?n=Perfil De Usuario">
                     <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                 </a>
+                <a href="Configuraciones.php?n=Configuraciones Tablas">
+                    <i class="fa fa-cog" aria-hidden="true"></i>
+                </a>
                 <a id="offSes">
                     <i class="fa fa-power-off" aria-hidden="true"></i>
                 </a>
-                
             </div>
         </div>
         <script>
