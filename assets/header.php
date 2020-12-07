@@ -79,6 +79,9 @@
                     <a href="#" title="Historial de Nomina" name="nomina" onclick="asigEventobtn(this)">
                         <i class="fa fa-money" aria-hidden="true"></i>
                     </a>
+                    <a href="#" Title="Configuraciones" name="config" onclick="asigEventobtn(this)">
+                        <i class="fa fa-cog" aria-hidden="true"></i>
+                    </a>
                 <?php }?> 
                     <a href="#" title="Tienda Web" name="tienda" onclick="asigEventobtn(this)">
                     <i class="fa fa-shopping-cart" aria-hidden="true"></i>
@@ -114,7 +117,10 @@
                     url += "historialNomina.php?n=Historial de nómina";
                     // title = "Historia de nómina";
                     break;
-                    <?php }?> 
+                case "config":
+                    url += "Configuraciones.php?n=Configuraciones Tablas";
+                    break;
+                <?php }?> 
                 case "tienda":
                     url = "../credihogar_tienda.php";
                     break;

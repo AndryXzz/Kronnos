@@ -6,25 +6,46 @@
     <?php
     }
 ?>
- 
-    <link rel="stylesheet" href="../css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
-    
+<link rel="stylesheet" href="../css/style.css">
+
+    <!-- <script>
+    const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        // didOpen: (toast) => {
+        //     toast.addEventListener('mouseenter', Swal.stopTimer)
+        //     toast.addEventListener('mouseleave', Swal.resumeTimer)
+        // }
+    })
+
+    Toast.fire({
+        icon: 'success',
+        title: 'Signed in successfully'
+    })
+    </script> -->
+
 
 <div class="container-fluid" id="container">
     <div class="row align-items-end">
 
         <div id="btnright" class="col text-right">
-            <a href="#" class="btn btn-info" role="button" data-toggle="tooltip" data-placement="top" title="Editar Usuario">
+            <a href="#" class="btn btn-info" role="button" data-toggle="tooltip" data-placement="top"
+                title="Editar Usuario">
                 <span data-toggle="modal" data-target="#editar">
-                    <span class="livicon shadowed" data-n="edit" data-s="15" data-c="white" data-hc="0" data-onparent="true"></span>
-                 Editar
+                    <span class="livicon shadowed" data-n="edit" data-s="15" data-c="white" data-hc="0"
+                        data-onparent="true"></span>
+                    Editar
                 </span>
-              </a>
+            </a>
         </div>
-        
+
     </div>
-    <div >
+    <div>
         <div class="row justify-content-center">
             <div id="fonfoto" class="col-3">
                 <div>
@@ -64,10 +85,9 @@
     </div>
 </div>
 
-  
-  <!-- Modal -->
 <!-- Modal -->
-<div class="modal fade" id="editar" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="editar" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -106,17 +126,11 @@
                 </table>
             </div>
             <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
             </div>
         </div>
     </div>
 </div>
-</body>
 
-    <script src="../js/popper.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/raphael-min.js"></script>
-    <script src="../js/livicons-customizer-1.4.js"></script>
-
-</html>
+<?php require_once("../assets/footer.php");?>
