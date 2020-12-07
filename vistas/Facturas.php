@@ -5,7 +5,7 @@
         ?>
         <script>location.href = "../index.php?est=3"</script>
         <?php
-    
+        }
 ?>
 <style>
     .tableStyle tbody tr td:nth-child(7) {

@@ -31,7 +31,6 @@
 </head>
 
 <body background="../img/OIP.jpg">
-    <?php if($infoSession['rol'] != "Cliente") { ?>
     <header>
         <div class="left-menu">
             <div class="logo"><img src="../img/kronnos_logo.png" alt="Logo" srcset=""></div>
@@ -43,57 +42,62 @@
                 <div class="options">
                     <ul>
                         <li>
-                            <i class="fa fa-home"></i> <span><a href="Admin.php?n=Dashboard">Dashboard</a></span>
+                            <i class="fa fa-home"></i> <span><a href="<?=$infoSession['rol']?>.php?n=Dashboard">Dashboard</a></span>
                         </li>
-                        <li>
-                            <i class="fa fa-users"></i> <span><a href="Users.php?n=Usuarios">Usuarios</a></span>
-                        </li>
-                        <li>
-                            <i class="fa fa-bar-chart"></i> <span><a
-                                    href="Facturas.php?n=Contabilidad">Contabilidad</a></span>
-                        </li>
-                        <li>
-                            <i class="fa fa-archive"></i> <span><a
-                                    href="Inventario.php?n=Inventario">Inventario</a></span>
-                        </li>
-                        <li>
-                            <i class="fa fa-history" aria-hidden="true"></i> <span><a
-                                    href="historialVentas.php?n=Historial de ventas">Ventas</a></span>
-                        </li>
+                        <?php if($infoSession['rol'] == "Admin") { ?>
+                            <li>
+                                <i class="fa fa-users"></i> <span><a href="Users.php?n=Usuarios">Usuarios</a></span>
+                            </li>
+                            <li>
+                                <i class="fa fa-bar-chart"></i> <span><a
+                                        href="Facturas.php?n=Contabilidad">Contabilidad</a></span>
+                            </li>
+                            <li>
+                                <i class="fa fa-archive"></i> <span><a
+                                        href="Inventario.php?n=Inventario">Inventario</a></span>
+                            </li>
+                            <li>
+                                <i class="fa fa-history" aria-hidden="true"></i> <span><a
+                                        href="historialVentas.php?n=Historial de ventas">Ventas</a></span>
+                            </li>
+                        <?php }?> 
+                        <?php if($infoSession['rol'] == "Cliente") { ?>
+                            <li>
+                                <i class="fa fa-credit-card""></i> <span><a href="payment.php?n=Pagar a cartera">Pagar Cuótas</a></span>
+                            </li>
+                            <li>
+                                <i class="fa fa-archive""></i> <span><a href="historyBuys.php?n=Historial de compras">Historial de compras</a></span>
+                            </li>
+                        <?php }?> 
                     </ul>
                 </div>
             </div>
         </div>
-    </header>
-    <?php }else{ ?> <style>
-        .content-body {
-            margin: 0px;
-            width: 100%;
-        }
-    </style> <?php }?>
-    <div class="top-menu">
-        <div class="icons">
-            <a href="#" title="Historial de Nomina" name="nomina" onclick="asigEventobtn(this)">
-                <i class="fa fa-money" aria-hidden="true"></i>
-            </a>
-            <a href="#" title="Tienda Web" name="tienda" onclick="asigEventobtn(this)">
-                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-            </a>
-            <!-- <a href="" name="selecc">
-                    <i class="fa fa-search" aria-hidden="true"></i>
+        <div class="top-menu">
+            <div class="icons">
+                <?php if($infoSession['rol'] == "Admin") { ?>
+                    <a href="#" title="Historial de Nomina" name="nomina" onclick="asigEventobtn(this)">
+                        <i class="fa fa-money" aria-hidden="true"></i>
+                    </a>
+                <?php }?> 
+                    <a href="#" title="Tienda Web" name="tienda" onclick="asigEventobtn(this)">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                 </a>
-                <a href="" name="selecc">
-                    <i class="fa fa-bell" aria-hidden="true"></i>
-                </a> -->
-            <a href="#" title="Mi cuenta" name="cuenta" onclick="asigEventobtn(this)">
-                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-            </a>
-            <a id="offSes" title="Cerrar Sesión">
-                <i class="fa fa-power-off" aria-hidden="true"></i>
-            </a>
+                <!-- <a href="" name="selecc">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </a>
+                    <a href="" name="selecc">
+                        <i class="fa fa-bell" aria-hidden="true"></i>
+                    </a> -->
+                <a href="#" title="Mi cuenta" name="cuenta" onclick="asigEventobtn(this)">
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                </a>
+                <a id="offSes" title="Cerrar Sesión">
+                    <i class="fa fa-power-off" aria-hidden="true"></i>
+                </a>
+            </div>
         </div>
-    </div>
-    <script>
+        <script>
         document.getElementById("offSes").addEventListener('click', function () {
             let salir = confirm("¿Seguro desea cerrar sesión?");
             if (salir) {
@@ -105,10 +109,12 @@
             var redireccion = obj.getAttribute("name");
             let url = "../vistas/";
             switch (redireccion) {
+                <?php if($infoSession['rol'] == "Admin") { ?>
                 case "nomina":
                     url += "historialNomina.php?n=Historial de nómina";
                     // title = "Historia de nómina";
                     break;
+                    <?php }?> 
                 case "tienda":
                     url = "../credihogar_tienda.php";
                     break;
@@ -130,9 +136,10 @@
         //     console.log(btnmenu[i]);;
         //     btnmenu[i].addEventListener("click", asigEventobtn(this));
         // }
-    </script>
+        </script>
+    </header>
     <div class="content-body">
         <div>
             <h5><span class="livicon" data-name="dashboard" data-c="dark" data-s="30" data-loop="true" data-hovercolor="dark"></span> <span><?= $_GET['n']; ?></span></h5>
         </div>
-        <div id="row">
+        <div id="row" class="scrollbar">

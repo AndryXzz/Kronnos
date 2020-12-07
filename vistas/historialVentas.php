@@ -3,7 +3,7 @@
     ?>
     <script>location.href = "../index.php?est=3"</script>
     <?php
-
+    }
 ?>
     <table class="tableStyle" cellpadding="10">
         <thead>

@@ -4,20 +4,20 @@ const botones = document.getElementsByClassName('crud');
 
 var abrirmodal = function (tipoAccion) {
     let infoID = '';
-    let action = '';
+    let action = '../modelos/';
     let inputId = '';
     let idAct = '';
     let contra = '';
     if (tipoAccion == "Actualizar") {
         infoID = `<p id="inpID"></p>`;
-        action = 'updateCrud.php';
+        action += 'updateCrud.php';
         idAct = `<input type="hidden" id="idd" name="idd">`;
 
     } else {
-        action = 'crearCrud.php';
+        action += 'crearCrud.php';
         inputId = `
                     <section>
-                        <label for="name">Número de Cédula</label>
+                        <label for="idd">Número de Cédula</label>
                         <input required class="input" type="number" name="idd" id="idd">
                     </section>
                 `;
@@ -39,7 +39,53 @@ var abrirmodal = function (tipoAccion) {
                     </section>
                     <section>
                         <label for="lastName">Apellidos</label>
-                        <input required class="input" type="text" placeholder="Ingrese un nuevo valor" name="lastNamename">
+                        <input required class="input" type="text" placeholder="Ingrese un nuevo valor" name="lastName">
+                    </section>
+                    <section>
+                        <label for="dpto">Departamento</label>
+                            <select required name="dpto" required="" class="input" >
+                                <option selected disabled="" value=""> Seleccione un departamento</option>
+                                <option value="5" disabled>Amazonas</option>
+                                <option value="2" disabled>Antioquia</option>
+                                <option value="3" disabled>Arauca</option>
+                                <option value="4" disabled>Atlántico</option>
+                                <option value="1">Bogotá</option>
+                                <option value="6" disabled>Bolívar</option>
+                                <option value="7" disabled>Boyacá</option>
+                                <option value="8" disabled>Caldas</option>
+                                <option value="9" disabled>Caquetá</option>
+                                <option value="10" disabled>Casanare</option>
+                                <option value="11" disabled>Cauca</option>
+                                <option value="12" disabled>Cesar</option>
+                                <option value="13" disabled>Chocó</option>
+                                <option value="14" disabled>Córdoba</option>
+                                <option value="15" disabled>Cundinamarca</option>
+                                <option value="16" disabled>Guainía</option>
+                                <option value="17" disabled>Guaviare</option>
+                                <option value="18" disabled>Huila</option>
+                                <option value="19" disabled>La Guajira</option>
+                                <option value="20" disabled>Magdalena</option>
+                                <option value="21" disabled>Meta</option>
+                                <option value="22" disabled>Nariño</option>
+                                <option value="23" disabled>Norte de Santander</option>
+                                <option value="24" disabled>Putumayo</option>
+                                <option value="25" disabled>Quindío</option>
+                                <option value="26" disabled>Risaralda</option>
+                                <option value="27" disabled>San Andrés y Providencia</option>
+                                <option value="28" disabled>Santander</option>
+                                <option value="29" disabled>Sucre</option>
+                                <option value="30" disabled>Tolima</option>
+                                <option value="31" disabled>Valle del Cauca</option>
+                                <option value="32" disabled>Vaupés</option>
+                                <option value="33" disabled>Vichada</option>
+                            </select>
+                    </section>
+                    <section>
+                        <label for="city">Ciudad</label>
+                            <select required name="city" required="" class="input" >
+                                <option selected disabled="" value=""> Seleccione una ciudad</option>
+                                <option value="1">Bogotá</option>
+                            </select>
                     </section>
                     <section>
                         <label for="address">Dirección</label>
@@ -93,6 +139,7 @@ var editar = function () {
 
     var valores = this.parentNode.parentNode.getElementsByTagName("span");
     var inputs = modal.getElementsByTagName("input");
+    var selects = modal.getElementsByTagName("select");
     //Poner el ID en el modal
     document.getElementById("inpID").innerHTML = valores[0].innerHTML.trim();
     document.getElementById("idd").value = valores[0].innerHTML.trim();
@@ -101,7 +148,8 @@ var editar = function () {
 
     //poner info en los input
     console.log(inputs);
-    document.getElementById("rol").value = valores[2].innerHTML.trim();
+    selects.rol
+    selects.rol.value = valores[2].innerHTML.trim();
     for (let i = 1; i <= 5; i++) {
         inputs[i - 1].value = valores[i].innerHTML.trim();
     }
@@ -133,8 +181,9 @@ var editar = function () {
 var borrar = function () {
     let borrar = confirm("Está seguro de desear borrar este paciente? la info no se podrá recuperar");
     if (borrar) {
-        let id = this.parentNode.parentNode.getElementsByTagName("td")[0].innerHTML.trim();
-        location.href = 'deleteCrud.php?id=' + id;
+        let id = this.parentNode.parentNode.getElementsByTagName("td")[0].innerText;
+        // console.log(location.href );
+        location.href = '../modelos/deleteCrud.php?id=' + id;
     }
 }
 

@@ -1,10 +1,10 @@
 <?php
     require_once("../assets/header.php");
-    if ($infoSession['rol'] != "Admin") {
+    if (empty($infoSession['rol'])) {
     ?>
     <script>location.href = "../index.php?est=3"</script>
     <?php
-
+    }
 ?>
  
     <link rel="stylesheet" href="../css/style.css">
@@ -45,14 +45,17 @@
                         <tr>
                             <th scope="row">Correo</th>
                             <td>Pepito @gmaol.com</td>
-                            <th scope="row">Genero</th>
-                            <td>Sin Definir</td>
-                        </tr>
-                        <tr>
                             <th scope="row">Cedula</th>
                             <td>1.563.228</td>
+                        </tr>
+                        <tr>
                             <th scope="row">Direccion</th>
                             <td>Calle avenida suba</td>
+                            <th scope="row">Contraseña</th>
+                            <td>*****</td>
+                        </tr>
+                        <tr>
+                            
                         </tr>
                     </tbody>
                 </table>
@@ -85,14 +88,15 @@
                         <tr>
                             <th scope="row">Correo</th>
                             <td><input type="text" class="form-control" value="Pepito @gmaol.com"></td>
-                            <th scope="row">Genero</th>
-                            <td><input type="text" class="form-control" value="Sin Definir"></td>
-                        </tr>
-                        <tr>
                             <th scope="row">Cedula</th>
                             <td><input type="text" class="form-control" value="1.563.228"></td>
+                        </tr>
+                        <tr>
                             <th scope="row">Direccion</th>
                             <td><input type="text" class="form-control" value="Calle avenida suba"></td>
+                            <th scope="row">Contraseña</th>
+                            <td><input type="text" class="form-control" value="******"></td>
+                        </tr>
                         </tr>
                         <tr>
                             <th scope="row">Subir Foto</th>

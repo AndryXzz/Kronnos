@@ -9,7 +9,7 @@
     }
     try {
 
-        $query = $db->prepare("SELECT u.Cedula, u.Nombre, u.Apellido , u.Direccion , u.Celular, u.Correo, r.nombreRol AS rol, c.nombreCiudad AS ciudad FROM usuario u INNER JOIN rol r ON u.Ciudad_idCiudad = r.idRol INNER JOIN ciudad c ON u.Ciudad_idCiudad = c.idCiudad;");
+        $query = $db->prepare("SELECT u.Cedula, u.Nombre, u.Apellido , u.Direccion , u.Celular, u.Correo, r.nombreRol AS rol, c.nombreCiudad AS ciudad FROM usuario u INNER JOIN rol r ON u.Rol_idRol = r.idRol INNER JOIN ciudad c ON u.Ciudad_idCiudad = c.idCiudad;");
         $query->execute();
         $rows = $query->fetchAll(PDO::FETCH_ASSOC);
 

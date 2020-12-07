@@ -3,7 +3,7 @@
     ?>
     <script>location.href = "../index.php?est=3"</script>
     <?php
-
+    }
 ?>
 
 <style>
@@ -78,4 +78,5 @@
     </tbody>
 </table>
 <script src="../js/historialNomina.js"></script>
+
 <?php require_once("../assets/footer.php");?>
