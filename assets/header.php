@@ -20,6 +20,8 @@
     <script src=".././js/jquery-3.5.1.slim.min.js"></script>
     <script src=".././js/Chart.min.js"></script>
     <script src=".././js/utils.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script>
         $(function () {
             $('[data-toggle="tooltip"]').tooltip()
@@ -63,10 +65,10 @@
                         <?php }?> 
                         <?php if($infoSession['rol'] == "Cliente") { ?>
                             <li>
-                                <i class="fa fa-credit-card""></i> <span><a href="payment.php?n=Pagar a cartera">Pagar Cuótas</a></span>
+                                <i class="fa fa-credit-card"></i> <span><a href="payment.php?n=Pagar a cartera">Pagar Cuótas</a></span>
                             </li>
                             <li>
-                                <i class="fa fa-archive""></i> <span><a href="historyBuys.php?n=Historial de compras">Historial de compras</a></span>
+                                <i class="fa fa-archive"></i> <span><a href="historyBuys.php?n=Historial de compras">Historial de compras</a></span>
                             </li>
                         <?php }?> 
                     </ul>
