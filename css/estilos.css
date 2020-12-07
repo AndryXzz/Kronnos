@@ -130,11 +130,12 @@ textarea {
     top: 0;
     height: 100%;
     background-size: cover;
-    border-right: 2px solid black;
+    border-right: 1px solid #a1a1a1;
 }
 .left-menu .logo {
-    /* background: white; */
-    border-bottom: 2px solid black;
+    background: white;
+    border-bottom: 1px solid #a1a1a1;
+    padding-bottom: 3px;
 }
 .left-menu .logo img {
     width: 95%;
@@ -183,11 +184,11 @@ textarea {
 }
 
 .content-body {
-    background: white;
+    background: #f0f0f0b3;
     padding: 15px;
     margin-left: 12em;
     position: absolute;
-    height: calc(100% - 4.4em);
+    height: calc(100% - 4.6em);
     width: calc(100% - 12em);
 }
 
@@ -202,10 +203,10 @@ textarea {
 }
 
 .top-menu {
-    margin-left: 12.1em;
+    margin-left: 12em;
     padding: 8px;
-    height: 4.4em;
-    border-bottom: 2px solid black;
+    height: 4.5em;
+    border-bottom: 1px solid #a1a1a1;
     display: flex;
     align-items: center;
 }
@@ -281,35 +282,49 @@ textarea {
     text-align: right;
 }
 
-div.scroll {
-    overflow: scroll;
-    max-height: 610px;
-    overflow-x: unset;
+div.scrollbar {
     scroll-behavior: smooth;
 }
 
-div.scroll::-webkit-scrollbar {
+div.scrollbar::-webkit-scrollbar {
     scroll-behavior: smooth;
 }
 
-div.scroll::-webkit-scrollbar-button {
+div.scrollbar::-webkit-scrollbar-button {
     display: none;
 }
 
-div.scroll::-webkit-scrollbar-thumb {
-    background-color: #faf8ffb8;
-    border-radius: 5px;
-}
-
-div.scroll::-webkit-scrollbar-track {
-    background-color: #ffffff38;
-    border-radius: 5px;
+div.scrollbar::-webkit-scrollbar-thumb {
+    background-color: #494952a9;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
 }
 
 #row {
-    padding: 8px;
-    border: grey 2px solid;
-    border-radius: 15px;
-    max-height: 95%;
+    padding: 12px;
+    border: #56b7f5 1px solid;
+    border-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    max-height: 87%;
     overflow-y: scroll;
+    background: white;
+    box-shadow: -3px -1px 10px;
+}
+
+footer {
+    position: fixed;
+    background: #332e44;
+    height: 2.5em;
+    bottom: 0px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+footer div {
+    padding: 8px;
+    border-top: 1px solid #a1a1a1;
 }

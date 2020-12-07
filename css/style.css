@@ -159,3 +159,132 @@ a {
 #tFact img {
   width: 50px;
 }
+
+
+#dropdow {
+  background-color: #000000;
+  border-top: 1em solid;
+}
+
+
+
+/************ Configuracion ************/
+.icon-box-03 .sub-wrapper {
+  -webkit-transition: all .2s linear;
+  -ms-transition: all .2s linear;
+  transition: all .2s linear;
+}
+.icon-box-03 .icon-wrapper {
+  float: none;
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 40px auto 20px;
+  text-align: center;
+}
+.icon-box-03 .sub-wrapper {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 108px;
+  height: 108px;
+  opacity: 0.62;
+}
+.icon-box-03 .livicon-evo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -30px 0 0 -30px;
+}
+.icon-box-03 .icon-wrapper:hover .sub-wrapper {
+  opacity: 1;
+}
+.icon-box-03 .text-wrapper {
+  text-align: center;
+}
+.icon-box-03 h4 {
+  color: #2C3F50;
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+.icon-box-03 p {
+  color:#90A4AE;
+}
+.icon-box-03 .icon-wrapper.bg1 {
+  background-color: #80CBC4;
+}
+.icon-box-03 .icon-wrapper.bg1 .sub-wrapper {
+  background-color: #80CBC4;
+  border: 1px solid #80CBC4;
+}
+.icon-box-03 .icon-wrapper.bg1:hover .sub-wrapper {
+  background-color: #26A69A;
+  border-color: #fff;
+}
+.icon-box-03 .icon-wrapper.bg2 {
+  background-color: #CE93D8;
+}
+.icon-box-03 .icon-wrapper.bg2 .sub-wrapper {
+  background-color: #CE93D8;
+  border: 1px solid #CE93D8;
+}
+.icon-box-03 .icon-wrapper.bg2:hover .sub-wrapper {
+  background-color: #AB47BC;
+  border-color: #fff;
+}
+.icon-box-03 .icon-wrapper.bg3 {
+  background-color: #81D4FA;
+}
+.icon-box-03 .icon-wrapper.bg3 .sub-wrapper {
+  background-color: #81D4FA;
+  border: 1px solid #81D4FA;
+}
+.icon-box-03 .icon-wrapper.bg3:hover .sub-wrapper {
+  background-color: #29B6F6;
+  border-color: #fff;
+}
+
+.icon-box-03 .icon-wrapper.bg5 {
+  background-color: #B0BEC5;
+}
+.icon-box-03 .icon-wrapper.bg5 .sub-wrapper {
+  background-color: #B0BEC5;
+  border: 1px solid #B0BEC5;
+}
+.icon-box-03 .icon-wrapper.bg5:hover .sub-wrapper {
+  background-color: #78909C;
+  border-color: #fff;
+}
+.icon-box-03 .icon-wrapper.bg6 {
+  background-color: #FF8A65;
+}
+.icon-box-03 .icon-wrapper.bg6 .sub-wrapper {
+  background-color: #FF8A65;
+  border: 1px solid #FF8A65;
+}
+.icon-box-03 .icon-wrapper.bg6:hover .sub-wrapper {
+  background-color: #FF5722;
+  border-color: #fff;
+}
+
+.icon-box-03 .icon-wrapper.bg8 {
+  background-color: #81C784;
+}
+.icon-box-03 .icon-wrapper.bg8 .sub-wrapper {
+  background-color: #81C784;
+  border: 1px solid #81C784;
+}
+.icon-box-03 .icon-wrapper.bg8:hover .sub-wrapper {
+  background-color: #4CAF50;
+  border-color: #fff;
+}
+
+
+
+
+/************ Datatable ************/
+
+#grid {
+  text-align: center;
+}
