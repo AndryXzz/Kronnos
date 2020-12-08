@@ -127,10 +127,34 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-primary">Guardar</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal" id="editar1">Actualizar</button>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+    const $editar1 = document.querySelector("#editar1")
+
+
+    $editar1.addEventListener("click", () => {
+    
+        const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+        })
+        Toast.fire({
+        icon: 'success',
+        title: 'Usuario Actualizado Exitosamente'
+        });
+    });
+</script>
 
 <?php require_once("../assets/footer.php");?>

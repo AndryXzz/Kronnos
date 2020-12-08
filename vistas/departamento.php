@@ -135,7 +135,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-success">Guardar</button>
+                <button type="button" class="btn btn-success" data-dismiss="modal" id="crear">Guardar</button>
             </div>
         </div>
     </div>
@@ -165,7 +165,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-success">Guardar</button>
+                <button type="button" class="btn btn-success" data-dismiss="modal" id="editar1">Guardar</button>
             </div>
         </div>
     </div>
@@ -223,7 +223,7 @@
             </div>
             <div class="modal-footer">
                 <!-- <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button> -->
-                <button type="button" class="btn btn-success">Confirmar?</button>
+                <button type="button" class="btn btn-success" data-dismiss="modal" id="eliminar1">Confirmar?</button>
             </div>
         </div>
     </div>
@@ -252,7 +252,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-success">Guardar</button>
+                <button type="button" class="btn btn-success" data-dismiss="modal" id="btnSimple">Guardar</button>
             </div>
         </div>
     </div>
@@ -310,10 +310,72 @@
             </div>
             <div class="modal-footer">
                 <!-- <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button> -->
-                <button type="button" class="btn btn-success">Confirmar?</button>
+                <button type="button" class="btn btn-success" data-dismiss="modal" id="btnSimple">Confirmar?</button>
             </div>
         </div>
     </div>
 </div>
+<script>
+    const $crear = document.querySelector("#crear")
+    const $editar1 = document.querySelector("#editar1")
+    const $eliminar1 = document.querySelector("#eliminar1")
 
+    $crear.addEventListener("click", () => {
+    
+        const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+        })
+        Toast.fire({
+        icon: 'success',
+        title: 'Departamento Creado Exitosamente'
+        });
+    });
+
+    $editar1.addEventListener("click", () => {
+    
+        const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+        })
+        Toast.fire({
+        icon: 'success',
+        title: 'Departamento Editado Exitosamente'
+        });
+    });
+
+    $eliminar1.addEventListener("click", () => {
+    
+        const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+        })
+        Toast.fire({
+        icon: 'success',
+        title: 'Departamento Eliminado Exitosamente'
+        });
+    });
+    
+</script>
 <?php require_once("../assets/footer.php");?>

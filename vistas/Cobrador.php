@@ -1,18 +1,7 @@
 <?php require_once("../assets/header.php"); ?>
-    
 
     <!--        Etilos Yamid Cano         -->
     <link rel="stylesheet" href="../css/style.css">
-    <!--        sweetalert2         -->
-    <script src="https://unpkg.com/sweetalert2@9.5.3/dist/sweetalert2.all.min.js"></script>
-    <!--        Etilos Datatable         -->
-    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.11/css/jquery.dataTables.css">
-    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.11/js/jquery.dataTables.js"></script>
-    <Script>
-    $(document).ready(function() {
-        $('#grid').DataTable();
-    });
-    </Script>
 
 <div class="container-fluid" id="container">
     <div class="row justify-content-center">
@@ -156,14 +145,18 @@
     $btnSimple.addEventListener("click", () => {
         Swal.fire({
         title: 'El cliente Pago?',
-        input: 'checkbox',
-        inputPlaceholder: 'Confirmar si pago!'
+        showCancelButton: true,
+        confirmButtonText: 'Confirmar Pago',
+        cancelButtonText: 'Cancelar',
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        timer: 5000,
+        timerProgressBar: true,
         }).then(function(result) {
         if (result.value) {
             Swal.fire({icon: 'success', text: 'Clientes Cobrado'});
-
-        } else if (result.value === 0) {
-            Swal.fire({icon: 'error', text: "Clientes No Cobrado :("});
+        } else if (result.dismiss === Swal.DismissReason.cancel) {
+            Swal.fire({icon: 'error', text: "Oprecion cancelada :("});
 
         } else {
             console.log(`modal was dismissed by ${result.dismiss}`)

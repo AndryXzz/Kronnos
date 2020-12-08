@@ -27,6 +27,19 @@
             $('[data-toggle="tooltip"]').tooltip()
         })
     </script>
+
+    <!--        sweetalert2         -->
+    <script src="../js/sweetalert2.all.min.js"></script>
+    <!--        Etilos Datatable         -->
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.11/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.11/js/jquery.dataTables.js"></script>
+    <Script>
+    $(document).ready(function() {
+        $('#grid').DataTable();
+    });
+    </Script>
+
+    
     <!--        Etilos Yamid Cano         -->
 
 
