@@ -10,7 +10,7 @@ var abrirmodal = function (e) {
                 <button class="closeModal" id="closeModal">X</button>
                 <div class="row">
             <div class="col-6">
-                <h4 class="text-left">Editar Factura</h4>
+                <h4 class="text-left">Factura</h4>
             </div>
             <div class="col-6">
                 <h4 class="text-right">Fact. 1</h4>

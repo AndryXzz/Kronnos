@@ -40,9 +40,7 @@
             <tr>
                 <th>ID</th>
                 <th>Departamento</th>
-                <th width="60px">Ver</th>
-                <th width="60px">Editar</th>
-                <th width="60px">Eliminar</th>
+                <th width="150px">Opciones</th>
             </tr>
         </thead>
 
@@ -50,23 +48,19 @@
             <tr>
                 <td>1</td>
                 <td>Cundinamarca</td>
-                <td width="40px">
+                <td>
                     <a href="#" data-toggle="tooltip" data-placement="top" title="Ver">
                         <span data-toggle="modal" data-target="#ver">
                             <span class="livicon shadowed" data-n="eye-open" data-s="30" data-c="green" data-hc="0"
                                 data-onparent="true"></span>
                         </span>
                     </a>
-                </td>
-                <td width="40px">
                     <a href="#" data-toggle="tooltip" data-placement="top" title="Editar">
                         <span data-toggle="modal" data-target="#editar">
                             <span class="livicon shadowed" data-n="edit" data-s="30" data-c="blue" data-hc="0"
                                 data-onparent="true"></span>
                         </span>
                     </a>
-                </td>
-                <td width="40px">
                     <a href="#" data-toggle="tooltip" data-placement="top" title="Eliminar">
                         <span data-toggle="modal" data-target="#eliminar">
                             <span class="livicon shadowed" data-n="trash" data-s="30" data-c="red" data-hc="0"
@@ -85,16 +79,12 @@
                                 data-onparent="true"></span>
                         </span>
                     </a>
-                </td>
-                <td width="40px">
                     <a href="#" data-toggle="tooltip" data-placement="top" title="Editar">
                         <span data-toggle="modal" data-target="#editar1">
                             <span class="livicon shadowed" data-n="edit" data-s="30" data-c="blue" data-hc="0"
                                 data-onparent="true"></span>
                         </span>
                     </a>
-                </td>
-                <td width="40px">
                     <a href="#" data-toggle="tooltip" data-placement="top" title="Eliminar">
                         <span data-toggle="modal" data-target="#eliminar1">
                             <span class="livicon shadowed" data-n="trash" data-s="30" data-c="red" data-hc="0"
@@ -135,7 +125,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-success" data-dismiss="modal" id="crear">Guardar</button>
+                <button type="button" class="btn btn-success" data-dismiss="modal" id="crear1">Guardar</button>
             </div>
         </div>
     </div>
@@ -316,11 +306,11 @@
     </div>
 </div>
 <script>
-    const $crear = document.querySelector("#crear")
+    const $crear1 = document.querySelector("#crear1")
     const $editar1 = document.querySelector("#editar1")
     const $eliminar1 = document.querySelector("#eliminar1")
 
-    $crear.addEventListener("click", () => {
+    $crear1.addEventListener("click", () => {
     
         const Toast = Swal.mixin({
         toast: true,

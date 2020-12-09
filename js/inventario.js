@@ -10,10 +10,10 @@ var abrirmodal = function (e) {
                 <button class="closeModal" id="closeModal">X</button>
                 <div class="row">
             <div class="col-6">
-                <h4 class="text-left">Editar Factura</h4>
+                <h4 class="text-left">Inventario</h4>
             </div>
             <div class="col-6">
-                <h4 class="text-right">Fact. 1</h4>
+                <h4 class="text-right"></h4>
             </div>
             <div class="col-6">
                 <label for="name">Nombre</label>
@@ -22,7 +22,7 @@ var abrirmodal = function (e) {
                         <span class="input-group-text" id="inputGroup-sizing-sm"><i class="fa fa-user"></i></span>
                     </div>
                     <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"
-                        name="name" value="Juan Perez">
+                        name="name" value="Felpa Color Crema">
                 </div>
             </div>
             <div class="col-6">

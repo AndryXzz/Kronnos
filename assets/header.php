@@ -38,8 +38,6 @@
         $('#grid').DataTable();
     });
     </Script>
-
-    
     <!--        Etilos Yamid Cano         -->
 
 
