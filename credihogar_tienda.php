@@ -23,6 +23,7 @@
                     <li><a href="vistas/tienda/lenceria_credihogar_1click.html">productos</a></li>
                   <!--  <li><a href="">contacto</a></li>
                     <li><a href="">about</a></li> --->
+                    <li><a href="index.php">Login</a></li>
                 </ul>
             </nav>
            <a href="vistas/tienda/formu_regis.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>

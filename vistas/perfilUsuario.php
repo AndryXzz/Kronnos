@@ -98,7 +98,6 @@
             </div>
             <div class="modal-body">
                 <table class="table">
-                    <tbody>
                         <tr>
                             <th scope="row">Nombre</th>
                             <td><input type="text" class="form-control" value="Pepito"></td>
@@ -122,7 +121,6 @@
                             <th scope="row">Subir Foto</th>
                             <td><input type="file" name="archivosubido"></td>
                         </tr>
-                    </tbody>
                 </table>
             </div>
             <div class="modal-footer">
