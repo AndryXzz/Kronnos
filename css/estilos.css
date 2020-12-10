@@ -45,7 +45,7 @@ body {
 
 #login input[type="submit"]:hover,
 .butn:hover {
-    background-color: #3f8ed6;
+    background-color: #332e44;
     color: white;
     cursor: pointer;
 }
@@ -245,13 +245,17 @@ textarea {
     border: 1px solid;
     border-top: unset;
 }
+
 .tableStyle thead tr th:last-child {
     border-right: unset;
 }
+
 .tableStyle thead tr th:first-child {
     border-left: unset;
 }
-.tableStyle thead {
+
+.tableStyle thead,
+.tableStyle tfoot {
     background: #332e44;
     color: white;
 }

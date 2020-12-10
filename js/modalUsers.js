@@ -17,12 +17,12 @@ var abrirmodal = function (tipoAccion) {
         action += 'crearCrud.php';
         inputId = `
                     <section>
-                        <label for="idd">Número de Cédula</label>
+                        <label for="idd">Número de Cédula</label><br>
                         <input required class="input" type="number" name="idd" id="idd">
                     </section>
                 `;
         contra = `<section>
-                        <label for="passw">Contraseña</label>
+                        <label for="passw">Contraseña</label><br>
                         <input required class="input" type="text" placeholder="Ingrese un nuevo valor" name="passw">
                     </section>`;
     }
@@ -34,15 +34,15 @@ var abrirmodal = function (tipoAccion) {
                     ${infoID}
                     ${inputId}
                     <section>
-                        <label for="name">Nombre</label>
+                        <label for="name">Nombre</label><br>
                         <input required class="input" type="text" placeholder="Ingrese un nuevo valor" name="name">
                     </section>
                     <section>
-                        <label for="lastName">Apellidos</label>
+                        <label for="lastName">Apellidos</label><br>
                         <input required class="input" type="text" placeholder="Ingrese un nuevo valor" name="lastName">
                     </section>
                     <section>
-                        <label for="dpto">Departamento</label>
+                        <label for="dpto">Departamento</label><br>
                             <select required name="dpto" required="" class="input" >
                                 <option selected disabled="" value=""> Seleccione un departamento</option>
                                 <option value="5" disabled>Amazonas</option>
@@ -81,26 +81,26 @@ var abrirmodal = function (tipoAccion) {
                             </select>
                     </section>
                     <section>
-                        <label for="city">Ciudad</label>
+                        <label for="city">Ciudad</label><br>
                             <select required name="city" required="" class="input" >
                                 <option selected disabled="" value=""> Seleccione una ciudad</option>
                                 <option value="1">Bogotá</option>
                             </select>
                     </section>
                     <section>
-                        <label for="address">Dirección</label>
+                        <label for="address">Dirección</label><br>
                         <input required class="input" type="text" placeholder="Ingrese un nuevo valor" name="address">
                     </section>
                     <section>
-                        <label for="number">Celular</label>
+                        <label for="number">Celular</label><br>
                         <input required class="input" type="text" placeholder="Ingrese un nuevo valor" name="number">
                     </section>
                     <section>
-                        <label for="email">Correo</label>
+                        <label for="email">Correo</label><br>
                         <input required class="input" type="text" placeholder="Ingrese un nuevo valor" name="email">
                     </section>
                     <section>
-                        <label for="Rol">Rol</label>
+                        <label for="Rol">Rol</label><br>
                             <select required name="rol" id="rol" required="" class="input" >
                                 <option selected disabled="" value=""> Seleccione un rol</option>
                                 <option value="1">Admin</option>

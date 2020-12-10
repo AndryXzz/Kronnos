@@ -49,8 +49,7 @@
             <div class="logo"><img src="../img/kronnos_logo.png" alt="Logo" srcset=""></div>
             <div class="content">
                 <div id="usr">
-                    <i class="fa fa-user" style="font-size:48px;"></i> <span>Bienvenido
-                        <?= $_SESSION['user']['Nombre'] ?></span>
+                    <i class="fa fa-user" style="font-size:48px;"></i> <p style="margin:unset;">Bienvenido <span><strong><a style="color:black;" href="#" onclick="asigEventobtn(this)" name="cuenta"><?= $_SESSION['user']['Nombre'] ?></a></strong></span></p>
                 </div>
                 <div class="options">
                     <ul>
