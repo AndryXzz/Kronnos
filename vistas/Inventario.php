@@ -43,7 +43,7 @@
     </div>
     <br>
     <div class="justify-content-center">
-    <table id="grid" class="table table-striped table-bordered dt-responsive nowrap">
+    <table id="grid" class="tableStyle table table-bordered dt-responsive nowrap">
         <thead >
             <tr>
                 <th># Articulo</th>
