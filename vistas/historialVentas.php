@@ -4,7 +4,23 @@
     <script>location.href = "../index.php?est=3"</script>
     <?php
     }
+
+    
 ?>
+
+
+        <div id="btnleft" class="col text-left">
+            <a href="#" class="btn btn-info" role="button" data-toggle="tooltip" data-placement="top"
+                title="Crear Ventas">
+                <span data-toggle="modal" data-target="#crear">
+                    <span class="livicon shadowed" data-n="plus" data-s="15" data-c="white" data-hc="0"
+                        data-onparent="true"></span>
+                        Crear Ventas
+                </span>
+            </a>
+        </div>
+        <br>
+        
     <table class="tableStyle" cellpadding="10">
         <thead>
             <tr>
